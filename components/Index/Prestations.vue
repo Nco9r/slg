@@ -1,0 +1,237 @@
+<template>
+  <section class="prestations">
+    <div class="title_prestations">
+      <h3>Nos différentes prestations</h3>
+      <img src="~assets/img/svg/wave.svg" alt="" />
+    </div>
+    <div class="box_cards">
+      <div class="rec_left"></div>
+      <div class="rec_right"></div>
+      <no-ssr>
+        <vue-tiny-slider v-bind="tinySliderOptions" ref="tinySlider">
+          <div class="card">
+            <div class="img_card">
+              <img src="~assets/img/svg/icon_pis.svg" alt="" />
+            </div>
+            <div class="title_card">
+              <h4>Création de piscine</h4>
+            </div>
+            <div class="content_card">
+              <p>
+                Réalisation de piscine traditionnelle ou en block polystyrène.
+                Toute taille fond incliné ou droit.
+              </p>
+            </div>
+            <div class="btn_card">
+              <p>En savoir plus</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img_card second">
+              <img src="~assets/img/svg/icon_mac.svg" alt="" />
+            </div>
+            <div class="title_card">
+              <h4>Maçonnerie generale</h4>
+            </div>
+            <div class="content_card">
+              <p>
+                Réalisation de maison ou extension, aménagement extérieur, pool
+                house, terrasse, murette.
+              </p>
+            </div>
+            <div class="btn_card">
+              <p>En savoir plus</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img_card">
+              <img src="~assets/img/svg/icon_ter.svg" alt="" />
+            </div>
+            <div class="title_card">
+              <h4>Terrassement</h4>
+            </div>
+            <div class="content_card">
+              <p>
+                Chemin d’accès, passage de réseau divers, pose de casier
+                drainant, terrain de pétanque.
+              </p>
+            </div>
+            <div class="btn_card">
+              <p>En savoir plus</p>
+            </div>
+          </div>
+        </vue-tiny-slider>
+      </no-ssr>
+    </div>
+    <div class="slide_tiny">
+      <button class="slidePrev" id="prev">
+        <img src="@/assets/img/svg/arrow.svg" alt="" />
+      </button>
+      <button class="slideNext" id="next">
+        <img src="@/assets/img/svg/arrow.svg" alt="" />
+      </button>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      tinySliderOptions: {
+        mouseDrag: false,
+        container: '.card',
+        loop: true,
+        autplay: true,
+        speed: 300,
+        nav: false,
+        controls: true,
+        gutter: 0,
+        preventScrollOnTouch: 'auto',
+        mode: 'gallery',
+        center: true,
+        gutter: 20,
+        edgePadding: 40,
+        prevButton: '#prev',
+        nextButton: '#next',
+      },
+    }
+  },
+  head() {
+    return {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css',
+        },
+      ],
+    }
+  },
+}
+</script>
+
+<style scoped>
+.title_prestations {
+  text-align: center;
+}
+
+.title_prestations h3 {
+  margin-bottom: 5px;
+  padding: 0 20px;
+}
+
+.box_cards {
+  position: relative;
+  margin-top: 70px;
+
+  margin-bottom: 50px;
+}
+
+
+.card {
+  background-color: var(--white);
+  box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 330px;
+  width: 100px;
+  display: block;
+}
+.tns-controls {
+  display: none;
+}
+
+.tns-nav {
+  display: none!important;
+}
+.img_card img {
+  width: 70px;
+  height: 50px;
+}
+
+.second img {
+  width: 50px;
+}
+
+.title_card {
+  margin-top: 20px;
+  color: var(--bleu);
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.content_card {
+  color: var(--bleu);
+  line-height: 28px;
+  margin-bottom: 20px;
+  height: 90px;
+}
+
+.btn_card {
+  font-weight: bold;
+  color: var(--turquoise);
+  font-size: 14px;
+}
+
+.rec_left {
+  position: absolute;
+  background-color: var(--turquoise-light);
+  top: -25px;
+  left: 0px;
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+}
+
+.rec_right {
+  position: absolute;
+  background-color: var(--turquoise-light);
+  bottom: -25px;
+  right: 0px;
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+}
+
+.tns-carousel {
+  margin-right: 20px !important;
+}
+
+.slide_tiny {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.tns-item {
+  padding: 40px 20px;
+  margin-left: 20px;
+  width: 90% !important;
+}
+
+.slide_tiny .slidePrev {
+  border: none;
+  background-color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.slide_tiny .slideNext {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide_tiny .slidePrev img {
+  transform: rotate(180deg);
+}
+</style>
