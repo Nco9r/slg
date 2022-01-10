@@ -155,7 +155,21 @@ export default {
   position: absolute;
   bottom: -90px;
   left: 0px;
+   animation: move_wave 0.6s ease-in-out;
+  animation-fill-mode: forwards;
+  
   right: 0px;
+  
+}
+@keyframes move_wave {
+  from {
+
+    transform: translateY(90px);
+  }
+  to {
+
+    transform: translateY(0px);
+  }
 }
 
 .close {
