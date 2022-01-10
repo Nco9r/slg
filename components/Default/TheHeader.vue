@@ -2,7 +2,7 @@
   <header>
     <div class="header_mobile">
       <div class="logo_header">
-        <img src="~assets/img/svg/logo_slg.svg" alt="" />
+        <img src="~assets/img/png/logo.png" alt="" />
       </div>
       <div class="hamburger_header" @click="open = !open">
         <img src="~assets/img/svg/hamburger.svg" alt="" />
@@ -72,16 +72,19 @@ export default {
   height: 70px;
 }
 
+.logo_header img {
+    width: 120px;
+}
+
 .box_items_header {
   position: fixed;
-  border: 7px solid var(--white);
+
   top: 0;
   left: 0;
   background-color: var(--bleu);
   right: 0;
   bottom: 0;
   z-index: 12;
-
   overflow: hidden;
 }
 

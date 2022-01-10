@@ -189,7 +189,7 @@ export default {
     padding: 0;
     margin: 0 5px;
     border-radius: 50%;
-    background: #ddd;
+    background: red;
     border: 0;
 }
 

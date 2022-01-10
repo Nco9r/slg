@@ -6,7 +6,8 @@
     <div class="container_footer">
       <div class="infos_footer">
         <div class="logo_footer">
-          <img src="@/assets/img/svg/logo_slg.svg" alt="" />
+                  <img src="~assets/img/png/logo.png" alt="" />
+
           <div class="infos_contact">
             <p>contact@slgrealisation.fr</p>
             <p>+33 (0)6 83 97 65 90</p>
