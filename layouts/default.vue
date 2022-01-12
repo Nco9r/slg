@@ -80,6 +80,17 @@ h3 {
   font-weight: bold;
 }
 
+.btn_light {
+  background-color: transparent;
+  padding: 12px 18px;
+  border-radius: 0 25px 0 25px;
+  width: 250px;
+  text-align: center;
+  color: var(--bleu);
+  border: 1Px solid var(--bleu);
+  font-weight: bold;
+}
+
 .turquoise {
   color: var(--turquoise);
 }

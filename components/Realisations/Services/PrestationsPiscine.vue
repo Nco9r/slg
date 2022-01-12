@@ -1,7 +1,7 @@
 <template>
   <section class="prestations">
     <div class="title_prestations">
-      <h3>Nos différentes prestations</h3>
+      <h3>Nos autres prestations</h3>
       <img src="~assets/img/svg/wave.svg" alt="" />
     </div>
     <div class="box_cards">
@@ -9,25 +9,6 @@
       <div class="rec_right"></div>
       <no-ssr>
         <vue-tiny-slider v-bind="tinySliderOptions" ref="tinySlider">
-          <div class="card">
-            <div class="img_card">
-              <img src="~assets/img/svg/icon_pis.svg" alt="" />
-            </div>
-            <div class="title_card">
-              <h4>Création de piscine</h4>
-            </div>
-            <div class="content_card">
-              <p>
-                Réalisation de piscine traditionnelle ou en block polystyrène.
-                Toute taille fond incliné ou droit.
-              </p>
-            </div>
-            <div class="btn_card">
-              <nuxt-link to="/services/creation-de-piscine">
-              <p>En savoir plus</p>
-              </nuxt-link>
-            </div>
-          </div>
           <div class="card">
             <div class="img_card second">
               <img src="~assets/img/svg/icon_mac.svg" alt="" />
@@ -117,6 +98,11 @@ export default {
 </script>
 
 <style scoped>
+
+.prestations {
+    margin-bottom: 100px;
+    margin-top: -50px;
+}
 .title_prestations {
   text-align: center;
 }

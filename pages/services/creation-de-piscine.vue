@@ -1,22 +1,26 @@
 <template>
-  <div>
+<div>
     <div class="open">
       <img src="~assets/img/svg/wave_header.svg" alt="" />
     </div>
     <main>
-      <hero-contact />
-      <form-contact />
-      <Map />
+        <hero-piscine/>
+        <story/>
+        <content-piscine/>
+        <prestations-piscine/>
     </main>
-  </div>
+</div>
+  
 </template>
 
 <script>
-import FormContact from '../components/Contact/FormContact.vue'
-import HeroContact from '../components/Contact/HeroContact.vue'
-import Map from '../components/Contact/Map.vue'
+import Story from '../../components/Index/Story.vue'
+import ContentPiscine from '../../components/Realisations/Services/ContentPiscine.vue'
+import HeroPiscine from '../../components/Realisations/Services/HeroPiscine.vue'
+import PrestationsPiscine from '../../components/Realisations/Services/PrestationsPiscine.vue'
 export default {
-  components: { HeroContact, FormContact, Map },
+  components: { HeroPiscine, Story, ContentPiscine, PrestationsPiscine },
+
 }
 </script>
 
@@ -33,22 +37,24 @@ export default {
 .open img {
   margin-top: -80px;
   opacity: 0;
-  animation: appear 0.6s ease-in-out;
+  animation: appear .6s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 1.3s;
+   
+ 
 }
 
 @keyframes bck {
   0% {
     background-color: var(--bleu);
-    transform: translateY(0);
+    transform: translateY(0);  
   }
 
   60% {
     background-color: var(--turquoise);
     transform: translateY(0);
   }
-  100% {
+   100% {
     transform: translateY(115%);
   }
 }
@@ -56,10 +62,12 @@ export default {
 @keyframes appear {
   0% {
     opacity: 0;
+    
   }
 
-  100% {
+   100% {
     opacity: 1;
   }
 }
+
 </style>
