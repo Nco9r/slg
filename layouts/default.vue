@@ -48,14 +48,19 @@ html {
   --baseline: #f1f5f6;
   --background-gradient: linear-gradient(
     180deg,
-    rgb(235, 250, 250) 0%,
+    rgb(229, 250, 250) 0%,
     rgba(255, 255, 255, 1) 100%
   );
   --background-gradient-rotate: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 0%,
-    rgb(235, 250, 250) 100%
+    rgb(229, 250, 250)  100%
   );
+}
+
+a {
+  text-decoration: none;
+  color: var(--bleu);
 }
 
 h3 {

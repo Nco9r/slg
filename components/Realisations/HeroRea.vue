@@ -1,13 +1,12 @@
 <template>
   <section class="hero_banner">
     <div class="hero_img">
-      <img src="~assets/img/png/home_img.jpg" alt="" />
+      <img src="~assets/img/png/rea_img.jpg" alt="" />
     </div>
     <div class="hero_content">
       <div class="title_hero">
         <h1>
-          Maçonnerie, Terrassement, <span class="turquoise">Pisciniste</span> à
-          Cestas. (33)
+          Découvrez nos <span class="turquoise">réalisations</span> sur Bordeaux et sa Région.
         </h1>
         <img src="~assets/img/svg/wave.svg" alt="" />
       </div>

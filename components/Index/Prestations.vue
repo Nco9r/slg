@@ -213,9 +213,6 @@ margin-left: 20px;
   height: 100px;
 }
 
-.tns-carousel {
-  margin-right: 20px !important;
-}
 
 .slide_tiny {
   display: flex;
@@ -259,9 +256,7 @@ margin-left: 20px;
 }
 
 @media screen and (min-width: 1024px) {
-  .prestations {
-   max-width: 900px;
-  }
+
 
   .title_prestations h3 {
     font-size: 34px;
@@ -270,13 +265,13 @@ margin-left: 20px;
   .tns-item {
     padding: 40px 20px;
     margin-left: 20px;
-    width: 330px !important;
+    width: 420px !important;
   }
 
   .tns-item:nth-child(1) {
     padding: 40px 20px;
     margin-left: 70px;
-    width: 330px !important;
+    width: 420px !important;
 
   }
 

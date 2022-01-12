@@ -22,7 +22,9 @@
               <p>Accueil</p>
                 </nuxt-link>
               <p>Nos services</p>
+              <nuxt-link to="/realisations">
               <p>Nos réalisations</p>
+              </nuxt-link>
             </div>
             <nuxt-link to="/contact">
 
