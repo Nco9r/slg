@@ -6,6 +6,7 @@
     <main>
         <hero-contact/>
         <form-contact/>
+        <Map/>
     </main>
   </div>
 </template>
@@ -13,8 +14,9 @@
 <script>
 import FormContact from '../components/Contact/FormContact.vue'
 import HeroContact from '../components/Contact/HeroContact.vue'
+import Map from '../components/Contact/Map.vue'
 export default {
-  components: { HeroContact, FormContact },}
+  components: { HeroContact, FormContact, Map },}
 </script>
 
 <style scoped>

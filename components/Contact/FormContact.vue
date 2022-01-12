@@ -174,6 +174,7 @@ input[type='checkbox' i]:checked::after {
     background-color:rgb(230, 230, 230);
     color: rgb(192, 192, 192);
     pointer-events: none;
+    opacity: .5;
 }
 
 </style>
