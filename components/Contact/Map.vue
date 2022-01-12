@@ -4,11 +4,15 @@
           <h3>Nous trouver</h3>
           <img src="~assets/img/svg/wave.svg" alt="">
       </div>
+ <a href="https://www.google.com/maps/place/Slgrealisation/@44.7567425,-0.7371421,15z/data=!4m5!3m4!1s0x0:0xa0c815c1940cf19a!8m2!3d44.7567425!4d-0.7371421" target="_blank">
       <div class="img_map">
           <img src="~assets/img/svg/points.svg" alt="">
+         
           <img src="~assets/img/png/map.jpg" alt="">
+        
           <div class="rec_right"></div>
       </div>
+      </a>
   </section>
 </template>
 
