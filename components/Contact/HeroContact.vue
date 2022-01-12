@@ -140,11 +140,11 @@ section {
 
   .hero_content {
     position: absolute;
-    width: 45%;
-    height: 70%;
+    width: 500px;
+    height: 500px;
   
     right: 0;
-    padding: 20px 70px 40px 70px;
+    padding: 20px 30px 40px 50px;
     bottom: -50px;
   }
 
@@ -152,15 +152,15 @@ section {
     margin-top: 30px;
     font-size: 34px;
     line-height: 42px;
-    width: 400px;
+    width: 300px;
     font-weight: 900;
     margin-bottom: 15px;
     color: var(--white);
   }
   .mouse {
-    bottom: 130px;
+    bottom: 70px;
 
-    left: 95%;
+    left: 50%;
   }
 
 }

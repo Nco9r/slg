@@ -42,6 +42,20 @@
             <nuxt-link to="/"><p>Politique de confidentialité</p></nuxt-link>
             <nuxt-link to="/"><p>Cookies</p></nuxt-link>
           </div>
+          <div class="item_footer">
+            <h4>Nous suivre</h4>
+          
+              <a href="" target="_blank">
+                <img src="~assets/img/svg/fb.svg" alt="" />
+              </a>
+              <a href="" target="_blank">
+                <img src="~assets/img/svg/insta.svg" alt="" />
+              </a>
+              <a href="" target="_blank">
+                <img src="~assets/img/svg/in.svg" alt="" />
+              </a>
+ 
+          </div>
         </div>
       </div>
       <div class="copyright">
@@ -105,6 +119,10 @@ a {
   overflow: hidden;
   margin-top: -50px;
   margin-bottom: -20px;
+}
+
+footer {
+  background-color: var(--bleu);
 }
 
 .container_footer {
@@ -174,6 +192,8 @@ a {
   color: var(--yellow);
 }
 
+
+
 .item_footer p {
   margin-bottom: 10px;
   font-size: 14px;
@@ -209,11 +229,26 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  .container_footer {
-    max-width: 950px;
-    margin: auto;
-    margin-top: 50px;
+
+  footer {
+    margin-top: 200px;
   }
+  .container_footer {
+    max-width: 900px;
+    margin: auto;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .wave {
+  overflow: hidden;
+  margin-top: -50px;
+  margin-bottom: -120px;
+}
+
+.wave img{
+ width: 1000px;
+}
 
   .logo_footer {
     width: 200px;
@@ -223,14 +258,23 @@ a {
     margin-top: 30px;
     display: flex;
     flex-flow: row wrap;
+      justify-content: space-between;
   }
 
   .logo_footer p {
     width: 170px;
   }
 
+  .items_footer {
+    margin-left: 130px;
+  }
+
   .item_footer {
-    width: 193px;
+    width: 180px;
+  }
+
+  .item_footer img {
+    margin-right: 20px;
   }
 
   hr {
@@ -239,8 +283,9 @@ a {
 
   .copyright {
     display: flex;
-    width: 100%;
+    width: 600px;
     justify-content: space-between;
+    flex-flow: column;
   }
   .sociaux_desktop {
     display: flex;
@@ -271,6 +316,7 @@ a {
     margin-top: 30px;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
   }
 
   .logo_footer p {

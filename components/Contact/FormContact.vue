@@ -177,4 +177,55 @@ input[type='checkbox' i]:checked::after {
     opacity: .5;
 }
 
+@media screen and (min-width: 1024px) {
+    .block_form {
+        max-width: 900px;
+        margin: -15px auto 50px auto;
+    }
+
+    .top_form {
+        padding-top: 100px;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .top_left {
+        width: 50%;
+    }
+
+    .top_right {
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .form {
+        max-width: 800px;
+        margin: 30px auto;
+    }
+
+    .label_form {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .label {
+        width: 47%;
+    }
+
+    .textarea {
+        width: 100%;
+    }
+
+    .content p {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--white);
+    margin-left: 20px;
+}
+}
+
 </style>
