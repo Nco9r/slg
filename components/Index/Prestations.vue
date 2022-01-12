@@ -63,6 +63,7 @@
         </vue-tiny-slider>
       </no-ssr>
     </div>
+   
     <div class="slide_tiny">
       <button class="slidePrev" id="prev">
         <img src="@/assets/img/svg/arrow.svg" alt="" />
@@ -79,21 +80,24 @@ export default {
   data() {
     return {
       tinySliderOptions: {
-        mouseDrag: false,
-        container: '.card',
-        loop: true,
-        autplay: true,
-        speed: 300,
+        mouseDrag: true,
+        loop: false,
+        items: 1,
         nav: false,
-        controls: true,
+        autoplayButtonOutput: false,
         gutter: 0,
         preventScrollOnTouch: 'auto',
-        mode: 'gallery',
-        center: true,
-        gutter: 20,
-        edgePadding: 40,
+        controls: true,
         prevButton: '#prev',
         nextButton: '#next',
+        responsive: {
+          1014: {
+            items: 3,
+            loop: false,
+            prevButton: '#prev',
+            nextButton: '#next',
+          },
+        },
       },
     }
   },
@@ -127,13 +131,14 @@ export default {
   margin-bottom: 50px;
 }
 
-
 .card {
   background-color: var(--white);
   box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.1);
   text-align: center;
   height: 330px;
   width: 100px;
+  padding: 20px;
+  border: 2Px dashed var(--bleu);
   display: block;
 }
 .tns-controls {
@@ -141,7 +146,7 @@ export default {
 }
 
 .tns-nav {
-  display: none!important;
+  display: none !important;
 }
 .img_card img {
   width: 70px;
@@ -205,9 +210,12 @@ export default {
 
 .tns-item {
   padding: 40px 20px;
-  margin-left: 20px;
-  width: 90% !important;
+  margin-left: 25px;
+  margin-right: 15px;
+  text-align: center;
+  width: 325px!important;
 }
+
 
 .slide_tiny .slidePrev {
   border: none;
@@ -233,5 +241,48 @@ export default {
 
 .slide_tiny .slidePrev img {
   transform: rotate(180deg);
+}
+
+@media screen and (min-width: 1024px) {
+  .prestations {
+    max-width: 900px;
+    margin: 100px auto;
+  }
+
+  .title_prestations h3 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+  .tns-item {
+    padding: 40px 20px;
+    margin-left: 70px;
+    border: 2px dashed var(--bleu);
+    width: 400px !important;
+    box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.1);
+  }
+
+  .tns-item:nth-child(1) {
+    padding: 40px 20px;
+    margin-left: 0px;
+    width: 400px !important;
+    box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.1);
+  }
+
+  .rec_left {
+    display: none;
+  }
+
+  .rec_right {
+    display: none;
+  }
+
+  .slide_tiny {
+    display: flex;
+    margin-top: 0px;
+
+    z-index: 9;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
 }
 </style>

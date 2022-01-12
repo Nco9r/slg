@@ -1,18 +1,24 @@
 <template>
   <section class="hero_banner">
     <div class="hero_img">
-      <img src="~assets/img/png/home_img.jpg" alt="" />
+      <img src="~assets/img/png/contact_img.jpg" alt="" />
     </div>
     <div class="hero_content">
       <div class="title_hero">
         <h1>
-          Maçonnerie, Terrassement, <span class="turquoise">Pisciniste</span> à
-          Cestas. (33)
+          Contactez nous pour tous <span class="turquoise">renseignements.</span>
         </h1>
         <img src="~assets/img/svg/wave.svg" alt="" />
       </div>
-      <div class="btn">
-        <p>Devis Gratuit</p>
+      <div class="items_infos">
+          <div class="item">
+              <img src="~assets/img/svg/mail.svg" alt="">
+              <p>contact@slgrealisation.fr</p>
+          </div>
+          <div class="item">
+              <img src="~assets/img/svg/phone.svg" alt="">
+              <p>06 83 97 65 90</p>
+          </div>
       </div>
     </div>
     <div class="mouse">
@@ -85,6 +91,29 @@ section {
   animation: scroll 1.2s infinite ease-in-out;
 }
 
+.items_infos {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.item:nth-child(2) {
+    display: flex;margin-left: 3px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    margin-left: 10px;
+    color: var(--white);
+    font-weight: bold;
+}
+
 @keyframes scroll {
   0% {
     transform: translateY(0px);
@@ -133,5 +162,6 @@ section {
 
     left: 95%;
   }
+
 }
 </style>

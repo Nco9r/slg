@@ -75,4 +75,62 @@ h3 {
 .turquoise {
   color: var(--turquoise);
 }
+
+.label p {
+  color: var(--bleu);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.label p::after {
+  content: '*';
+  color: var(--white);
+  margin-left: 2px;
+  margin-top: -2Px;
+}
+
+input {
+padding: 16px 26px;
+border: none;
+border-radius: 0 25px 0 25px;
+width: 100%;
+font-family: 'Work sans', sans-serif;
+font-size: 16px;
+color: var(--bleu);
+margin-bottom: 20px;
+outline-color: var(--bleu);
+}
+
+
+textarea {
+padding: 16px 26px;
+border: none;
+border-radius: 0 25px 0 25px;
+width: 100%;
+font-family: 'Work sans', sans-serif;
+font-size: 16px;
+color: var(--bleu);
+margin-bottom: 20px;
+outline-color: var(--bleu);
+}
+
+select {
+padding: 16px 26px;
+border: none;
+background-color: var(--bleu);
+border-radius: 0 25px 0 25px;
+width: 100%;
+font-family: 'Work sans', sans-serif;
+font-size: 16px;
+color: var(--yellow);
+margin-bottom: 20px;
+background-image: url('~assets/img/svg/angle.svg');
+background-repeat: no-repeat;
+background-position: 90% 52%;
+background-size: 25px;
+font-weight: bold;
+ appearance: none;
+outline-color: var(--turquoise);
+}
+
 </style>

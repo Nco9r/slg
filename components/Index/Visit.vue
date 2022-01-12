@@ -50,4 +50,33 @@ export default {}
     color: var(--bleu);
     font-weight: bold;
 }
+
+@media screen and (min-width: 1024px) {
+    .visit {
+        text-align: center;
+  background-size: 75%;
+
+    }
+
+
+.title_visit h3 {
+    color: var(--white);
+    width: 600px;
+    font-size: 34px;
+    line-height: 46px;
+    margin: 20px auto;
+}
+
+.content_visit p {
+    margin-top: 20px;
+    line-height: 28px;
+    margin: 20px auto;
+    width: 600px;
+
+}
+
+.btn {
+    margin: 50px auto 10px auto;
+}
+}
 </style>
