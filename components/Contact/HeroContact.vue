@@ -128,7 +128,7 @@ section {
 
 @media screen and (min-width: 1024px) {
   .hero_img img {
-    width: 94%;
+    width: 84.2%;
     object-fit: cover;
     height: 90vh;
     margin-right: -90px;
@@ -160,7 +160,7 @@ section {
   .mouse {
     bottom: 70px;
 
-    left: 50%;
+    left: 90%;
   }
 
 }

@@ -83,21 +83,18 @@ export default {
   data() {
     return {
       tinySliderOptions: {
-        mouseDrag: false,
-        container: '.card_client',
+        mouseDrag: true,
         loop: true,
-        autplay: true,
+        items: 1,
+        nav: false,
+        autoplay: true,
 
-        speed: 300,
-        controls: true,
-        navPosition: 'bottom',
+         autoplayTimeout: 3500,
+        speed: 500,
+        autoplayButtonOutput: false,
         gutter: 0,
         preventScrollOnTouch: 'auto',
-        mode: 'gallery',
-        center: true,
-        swipeAngle: 35,
-        gutter: 0,
-        edgePadding: 0,
+        controls: true,
         prevButton: '#prev',
         nextButton: '#next',
       },
@@ -118,7 +115,7 @@ export default {
 
 <style scoped>
 .clients {
-  padding: 0 10px;
+  padding: 0 0px;
   margin-bottom: 50px;
 
 }
@@ -128,23 +125,24 @@ export default {
 
 .box_cards_clients {
   margin-top: 50px;
-  display: flex;
-  flex-flow: row wrap;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .tns-nav button {
   background-color: var(--turquoise) !important;
   color: var(--bleu);
 }
-.tns-nav {
-    margin: auto!important;
-    text-align: center!important;
-}
-.card_client {
-  padding: 20px;
 
-  background-color: var(--white);
-  box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.1);
+
+
+.card_client {
+   background-color: var(--white);
+box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  height: 350px;
+  width: 200px;
+  padding: 40px 20px;
+  display: block;
 }
 
 .entete {
@@ -165,15 +163,11 @@ export default {
   font-weight: bold;
 }
 
-.tns-outer  {
-    width: 50px;
-    height: 50px;
-    background-color: var(--bleu)!important;
-}
 
 .content_card_client p {
   line-height: 28px;
   margin-top: 20px;
+  height: 130px;
   color: var(--bleu);
 }
 
@@ -183,18 +177,19 @@ export default {
   margin-bottom: 20px;
 }
 
-.tns-nav > [aria-controls] {
-    width: 9px;
-    height: 9px;
-    padding: 0;
-    margin: 0 5px;
-    border-radius: 50%;
-    background: red;
-    border: 0;
+
+.tns-item {
+  margin-right: 20px;
+margin-left: 20px;
+  display: block;
 }
 
-.tns-nav > .tns-nav-active {
-    background: #999;
+.tns-carousel {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
 }
 
 .client p {

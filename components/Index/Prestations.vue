@@ -132,13 +132,12 @@ export default {
 }
 
 .card {
-  background-color: var(--white);
-  box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.1);
+  background-color: var(--baseline);
   text-align: center;
   height: 330px;
-  width: 100px;
-  padding: 20px;
-  border: 2Px dashed var(--bleu);
+
+  padding: 40px 20px;
+
   display: block;
 }
 .tns-controls {
@@ -151,6 +150,22 @@ export default {
 .img_card img {
   width: 70px;
   height: 50px;
+}
+
+.slide_tiny {
+  display: block;
+}
+
+.tns-item {
+  margin-right: 20px;
+margin-left: 20px;
+  display: block;
+}
+
+.tns-carousel {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
 
 .second img {
@@ -180,7 +195,7 @@ export default {
 
 .rec_left {
   position: absolute;
-  background-color: var(--turquoise-light);
+  background-color: var(--turquoise);
   top: -25px;
   left: 0px;
   z-index: -1;
@@ -190,7 +205,7 @@ export default {
 
 .rec_right {
   position: absolute;
-  background-color: var(--turquoise-light);
+  background-color: var(--turquoise);
   bottom: -25px;
   right: 0px;
   z-index: -1;
@@ -208,13 +223,13 @@ export default {
   justify-content: center;
 }
 
-.tns-item {
+/* .tns-item {
   padding: 40px 20px;
   margin-left: 25px;
   margin-right: 15px;
   text-align: center;
   width: 325px!important;
-}
+} */
 
 
 .slide_tiny .slidePrev {
@@ -225,16 +240,16 @@ export default {
   justify-content: center;
   align-items: center;
   margin-right: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .slide_tiny .slideNext {
   border: none;
   background-color: transparent;
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   justify-content: center;
   align-items: center;
 }
@@ -245,8 +260,7 @@ export default {
 
 @media screen and (min-width: 1024px) {
   .prestations {
-    max-width: 900px;
-    margin: 100px auto;
+   max-width: 900px;
   }
 
   .title_prestations h3 {
@@ -255,17 +269,15 @@ export default {
   }
   .tns-item {
     padding: 40px 20px;
-    margin-left: 70px;
-    border: 2px dashed var(--bleu);
-    width: 400px !important;
-    box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    width: 330px !important;
   }
 
   .tns-item:nth-child(1) {
     padding: 40px 20px;
-    margin-left: 0px;
-    width: 400px !important;
-    box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.1);
+    margin-left: 70px;
+    width: 330px !important;
+
   }
 
   .rec_left {

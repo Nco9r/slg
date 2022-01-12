@@ -1,8 +1,8 @@
 <template>
   <div>
-    <the-header/>
-    <nuxt/>
-    <the-footer/>
+    <the-header />
+    <nuxt />
+    <the-footer />
   </div>
 </template>
 
@@ -30,7 +30,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  
 }
 
 *,
@@ -70,6 +69,10 @@ h3 {
   background-color: var(--yellow);
   padding: 12px 18px;
   border-radius: 0 25px 0 25px;
+  width: 250px;
+  text-align: center;
+  color: var(--bleu);
+  font-weight: bold;
 }
 
 .turquoise {
@@ -86,51 +89,49 @@ h3 {
   content: '*';
   color: var(--white);
   margin-left: 2px;
-  margin-top: -2Px;
+  margin-top: -2px;
 }
 
 input {
-padding: 16px 26px;
-border: none;
-border-radius: 0 25px 0 25px;
-width: 100%;
-font-family: 'Work sans', sans-serif;
-font-size: 16px;
-color: var(--bleu);
-margin-bottom: 20px;
-outline-color: var(--bleu);
+  padding: 16px 26px;
+  border: none;
+  border-radius: 0 25px 0 25px;
+  width: 100%;
+  font-family: 'Work sans', sans-serif;
+  font-size: 16px;
+  color: var(--bleu);
+  margin-bottom: 20px;
+  outline-color: var(--bleu);
 }
 
-
 textarea {
-padding: 16px 26px;
-border: none;
-border-radius: 0 25px 0 25px;
-width: 100%;
-font-family: 'Work sans', sans-serif;
-font-size: 16px;
-color: var(--bleu);
-margin-bottom: 20px;
-outline-color: var(--bleu);
+  padding: 16px 26px;
+  border: none;
+  border-radius: 0 25px 0 25px;
+  width: 100%;
+  font-family: 'Work sans', sans-serif;
+  font-size: 16px;
+  color: var(--bleu);
+  margin-bottom: 20px;
+  outline-color: var(--bleu);
 }
 
 select {
-padding: 16px 26px;
-border: none;
-background-color: var(--bleu);
-border-radius: 0 25px 0 25px;
-width: 100%;
-font-family: 'Work sans', sans-serif;
-font-size: 16px;
-color: var(--yellow);
-margin-bottom: 20px;
-background-image: url('~assets/img/svg/angle.svg');
-background-repeat: no-repeat;
-background-position: 90% 52%;
-background-size: 25px;
-font-weight: bold;
- appearance: none;
-outline-color: var(--turquoise);
+  padding: 16px 26px;
+  border: none;
+  background-color: var(--bleu);
+  border-radius: 0 25px 0 25px;
+  width: 100%;
+  font-family: 'Work sans', sans-serif;
+  font-size: 16px;
+  color: var(--yellow);
+  margin-bottom: 20px;
+  background-image: url('~assets/img/svg/angle.svg');
+  background-repeat: no-repeat;
+  background-position: 90% 52%;
+  background-size: 25px;
+  font-weight: bold;
+  appearance: none;
+  outline-color: var(--turquoise);
 }
-
 </style>

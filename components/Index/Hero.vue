@@ -35,7 +35,7 @@ export default {}
 /* PAGE */
 
 section {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .hero_banner {
@@ -99,10 +99,15 @@ section {
 
 @media screen and (min-width: 1024px) {
   .hero_img img {
-    width: 94%;
+    width: 84.2%;
+
     object-fit: cover;
     height: 90vh;
     margin-right: -90px;
+  }
+
+  .btn {
+    margin: 0;
   }
 
   .hero_banner {
@@ -111,11 +116,11 @@ section {
 
   .hero_content {
     position: absolute;
-    width: 45%;
-    height: 70%;
+    width: 500px;
+    height: 500px;
   
     right: 0;
-    padding: 20px 70px 40px 70px;
+    padding: 20px 30px 40px 50px;
     bottom: -50px;
   }
 

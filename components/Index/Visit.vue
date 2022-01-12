@@ -22,7 +22,7 @@
 export default {}
 </script>
 
-<style>
+<style scoped>
 .visit {
   background-color: var(--bleu);
 

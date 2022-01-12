@@ -27,17 +27,17 @@ export default {
 <style scoped>
 .rea {
   background: var(--background-gradient);
-  padding-top: 30px;
+  padding: 30px 15px 0px 15px;
 }
 .title_rea h3 {
   margin-bottom: 5px;
-  padding: 0 26px;
+  padding: 0 16px;
   width: 300px;
 }
 
 .title_rea img {
   margin-bottom: 5px;
-  padding: 0 26px;
+  padding: 0 16px;
 }
 
 .box_cards {

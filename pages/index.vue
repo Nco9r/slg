@@ -49,7 +49,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .open {
   position: fixed;
   inset: 0;
