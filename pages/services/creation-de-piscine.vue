@@ -5,6 +5,9 @@
     </div>
     <main>
       <hero-piscine />
+      <div class="breadcrum">
+          <p>Accueil - Services - <span class="turquoise">Création de piscine</span></p>
+      </div>
       <story />
       <content-piscine />
       <visit />
@@ -47,6 +50,10 @@ export default {
   animation-fill-mode: forwards;
 }
 
+.turquoise {
+    font-weight: bold;
+}
+
 .open img {
   margin-top: -80px;
   opacity: 0;
@@ -78,5 +85,15 @@ export default {
   100% {
     opacity: 1;
   }
+}
+
+.breadcrum {
+    padding: 30px 26px 0px 26px;
+    margin-bottom: -70px;
+}
+
+.breadcrum p {
+    font-size: 12px;
+    color: var(--bleu);
 }
 </style>

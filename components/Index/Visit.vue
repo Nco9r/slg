@@ -27,7 +27,7 @@ export default {}
   background-color: var(--bleu);
 
   padding: 30px 15px 40px 26px;
-  margin-top: 60px;
+  margin-top: 30px;
   background-image: url('~assets/img/svg/carre.svg');
   background-size: 135%;
   color: var(--white);

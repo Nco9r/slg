@@ -37,12 +37,9 @@ export default {}
 
 /* PAGE */
 
-section {
-  overflow: hidden;
-}
 
 .hero_banner {
-  overflow-x: hidden;
+
 
   position: relative;
   margin-top: 70px;

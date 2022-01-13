@@ -1,8 +1,6 @@
 <template>
   <footer>
-    <div class="wave">
-      <img src="~assets/img/svg/wave_footer.svg" alt="" />
-    </div>
+   
     <div class="container_footer">
       <div class="infos_footer">
         <div class="logo_footer">
@@ -42,7 +40,7 @@
             <nuxt-link to="/"><p>Politique de confidentialité</p></nuxt-link>
             <nuxt-link to="/"><p>Cookies</p></nuxt-link>
           </div>
-          <div class="item_footer">
+          <div class="item_footer desktop">
             <h4>Nous suivre</h4>
           
               <a href="" target="_blank">
@@ -123,6 +121,9 @@ a {
 
 footer {
   background-color: var(--bleu);
+  background-image: url('~assets/img/svg/carre.svg');
+  background-size: 35%;
+
 }
 
 .container_footer {
@@ -130,7 +131,7 @@ footer {
 
   display: flex;
   flex-flow: row wrap;
-  background-color: var(--bleu);
+ 
   color: var(--white);
 }
 
@@ -179,6 +180,10 @@ footer {
   justify-content: space-between;
 }
 
+.desktop {
+  display: none;
+}
+
 .item_footer {
   width: 160px;
 }
@@ -225,7 +230,9 @@ footer {
 
 .copyright p {
   font-size: 12px;
-  margin-bottom: 20px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 1024px) {

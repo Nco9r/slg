@@ -21,7 +21,9 @@
                 <nuxt-link to="/">
               <p>Accueil</p>
                 </nuxt-link>
+                <nuxt-link to="/services/creation-de-piscine">
               <p>Nos services</p>
+                </nuxt-link>
               <nuxt-link to="/realisations">
               <p>Nos réalisations</p>
               </nuxt-link>
@@ -100,7 +102,7 @@ a {
   background-color: var(--white);
   right: 0;
   z-index: 10;
-  padding: 20px;
+  padding: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,11 +164,11 @@ a {
   animation-delay: 0.1s;
 }
 
-.items p:nth-child(2) {
+.items  p:nth-child(2) {
   animation-delay: 0.2s;
 }
 
-.items p:nth-child(3) {
+.items   p:nth-child(3) {
   animation-delay: 0.3s;
 }
 

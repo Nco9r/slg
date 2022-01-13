@@ -84,7 +84,7 @@ export default {
     background-color: var(--turquoise);
     background-image: url('~assets/img/svg/carre.svg');
     background-size: 135%;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .top_form {
@@ -181,6 +181,10 @@ input[type='checkbox' i]:checked::after {
     .block_form {
         max-width: 900px;
         margin: -15px auto 50px auto;
+    }
+
+    .form_contact {
+        padding-bottom: 30px;
     }
 
     .top_form {

@@ -39,7 +39,7 @@ export default {
 }
 
 .block_left {
-    padding-top: 160px;
+    padding-top: 130px;
 }
 
 .block_left h2 {

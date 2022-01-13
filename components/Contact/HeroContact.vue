@@ -17,7 +17,7 @@
           </div>
           <div class="item">
               <img src="~assets/img/svg/phone.svg" alt="">
-              <p>06 83 97 65 90</p>
+              <p>06 14 64 58 48</p>
           </div>
       </div>
     </div>

@@ -2,6 +2,8 @@
   <section class="map">
     <div class="title_map">
       <h3>Nous trouver</h3>
+      <p>95 avenue du Maréchal de Lattre de Tassigny <br> 33610, Cestas</p>
+      <p>Lun - Ven : 9h - 18h</p>
       <img src="~assets/img/svg/wave.svg" alt="" />
     </div>
     <a
@@ -27,8 +29,12 @@ export default {}
 .map {
   margin-top: 30px;
   padding: 20px 26px 20px 26px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   overflow: hidden;
+}
+
+.title_map p {
+    color: var(--bleu);
 }
 
 .img_map {
@@ -62,14 +68,15 @@ export default {}
 
 @media screen and (min-width: 1024px) {
   .map {
-    max-width: 900px;
-    margin: 50px auto;
+    max-width: 800px;
+    margin: 50px auto 150px auto;
   }
   .img_map img:nth-child(2) {
     width: 100%;
-    height: 500px;
+    height: 400px;
     object-fit: cover;
   }
+
 
   .rec_right {
     position: absolute;

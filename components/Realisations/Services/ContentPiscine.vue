@@ -15,23 +15,28 @@
         </div>
         <div class="content">
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            SLGrealisation vous propose la réalisation de
+            <span class="turquoise">piscine traditionnelle</span> (maçonnerie)
+            toute taille fond incliné ou droit. De plus, ils vous proposent
+            également la création de
+            <span class="turquoise">piscine en block polystyrène</span>. Le but
+            de la piscine en block polystyrène est de construire une piscine en
+            béton armé sans utiliser les banches en bois ou métal ni les
+            traditionnels blocs à bancher en ciment. Celle-ci peut vous être
+            également proposé de toute taille et fond incliné ou droit.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            De plus, nous vous proposons également <span class="turquoise">l'entretien</span> et le
+            remplacement des <span class="turquoise">accessoires</span> de votre piscine comme les skimmers,
+            les refoulement ou la filtration. Nous pouvons également installer
+            ou remplacer votre lyner.
           </p>
         </div>
         <div class="btn_block">
           <div class="btn_light">
-            <p>Nos réalisations</p>
+            <nuxt-link to="/realisations">
+              <p>Nos réalisations</p>
+            </nuxt-link>
           </div>
           <div class="btn">
             <p>Devis gratuit</p>
@@ -51,6 +56,10 @@ export default {}
   margin-top: 30px;
   margin-bottom: 100px;
   overflow: hidden;
+}
+
+.turquoise {
+  font-weight: bold;
 }
 
 .block_content {
@@ -108,6 +117,10 @@ export default {}
   margin-bottom: 20px;
 }
 
+.btn_block {
+  margin-top: 50px;
+}
+
 .btn {
   margin: 0px auto;
   width: 100%;
@@ -141,19 +154,19 @@ export default {}
   }
 
   .btn_block {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-flow: row-reverse;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row-reverse;
   }
 
   .btn {
-      width: 200px;
-      margin-top: 15px;
+    width: 200px;
+    margin-top: 15px;
   }
 
   .btn_light {
-      width: 200px;
+    width: 200px;
   }
 }
 </style>

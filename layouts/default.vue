@@ -30,6 +30,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+ 
 }
 
 *,
@@ -75,6 +76,7 @@ h3 {
   padding: 12px 18px;
   border-radius: 0 25px 0 25px;
   width: 250px;
+  margin-top: 30px;
   text-align: center;
   color: var(--bleu);
   font-weight: bold;

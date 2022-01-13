@@ -120,7 +120,7 @@ export default {
 }
 
 .card {
-  background-color: var(--baseline);
+  background-color: var(--white);
   text-align: center;
   height: 330px;
 width: 100px;
@@ -184,7 +184,7 @@ margin-left: 20px;
 .rec_left {
   position: absolute;
   background-color: var(--turquoise);
-  top: -25px;
+  top: -10px;
   left: 0px;
   z-index: -1;
   width: 100px;
@@ -194,7 +194,7 @@ margin-left: 20px;
 .rec_right {
   position: absolute;
   background-color: var(--turquoise);
-  bottom: -25px;
+  bottom: 10px;
   right: 0px;
   z-index: -1;
   width: 100px;

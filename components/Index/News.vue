@@ -19,8 +19,9 @@
           <p>
             Entre filtration adaptée à la température de l’eau toute l’année,
             pilotage complet des projecteurs à tout moment sur le smartphone,
-            tild devient votre assistant personnel rêvé.
+            tild devient votre assistant personnel rêvé. 
           </p>
+          <p>N'hesitez pas à nous contacter pour avoir de plus amples informations</p>
         </div>
         <div class="btn">
           <p>En savoir plus</p>

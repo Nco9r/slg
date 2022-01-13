@@ -72,7 +72,7 @@
         </vue-tiny-slider>
       </no-ssr>
     </div>
-    <div class="btn">
+    <div class="btn center">
         <p>Voir nos avis</p>
     </div>
   </section>
@@ -86,9 +86,9 @@ export default {
         mouseDrag: true,
         loop: true,
         items: 1,
-        nav: false,
+        nav: true,
         autoplay: true,
-
+navPosition: 'bottom',
          autoplayTimeout: 3500,
         speed: 500,
         autoplayButtonOutput: false,
@@ -113,7 +113,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style >
 .clients {
   padding: 0 0px;
   margin-bottom: 50px;
@@ -129,16 +129,34 @@ export default {
   margin-bottom: 30px;
 }
 
+.tns-nav {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .tns-nav button {
-  background-color: var(--turquoise) !important;
-  color: var(--bleu);
+
+
+  border: 1Px solid var(--turquoise);
+  background-color: transparent;
+  margin-right: 10px;
+  height: 14px;
+  ;
+  width: 12px;
+  border-radius: 50%;
+}
+
+tns-nav-active {
+  background-color: var(--bleu)!important;
+
 }
 
 
 
 .card_client {
    background-color: var(--white);
-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
   height: 350px;
   width: 200px;
   padding: 40px 20px;
@@ -181,6 +199,7 @@ box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
 .tns-item {
   margin-right: 20px;
 margin-left: 20px;
+margin-bottom: 20px;
   display: block;
 }
 
@@ -198,7 +217,7 @@ margin-left: 20px;
   color: var(--bleu);
 }
 
-.btn {
+.center {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;

@@ -28,6 +28,7 @@ export default {
 .rea {
   background: var(--background-gradient);
   padding: 30px 15px 0px 15px;
+
 }
 .title_rea h3 {
   margin-bottom: 5px;
@@ -43,18 +44,25 @@ export default {
 .box_cards {
   position: relative;
   margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  z-index: 2;
   margin-bottom: 50px;
 }
 
+
+
 .card_rea {
   text-align: center;
-  margin: 0 20px;
+  margin: 0 26px;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .box_cards img {
   width: 100%;
+  margin-bottom: 20px;
+  z-index: 2;
   height: 100%;
   object-fit: cover;
 }
