@@ -1,7 +1,7 @@
 <template>
   <section class="cta">
       <div class="title_cta">
-          <h3>Réalisons ensemble vos projets</h3>
+          <h3>Réalisons <span class="turquoise">ensemble</span> vos projets</h3>
       </div>
       <div class="content_cta">
           <p>Obtenez un devis rapidement en nous contactant</p>
@@ -43,6 +43,26 @@ export default {
 
 .btn {
     margin: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .cta {
+        background-size: 100%;
+        background-position: 50%;
+    }
+
+    .title_cta h3 {
+    color: var(--white);
+    font-size: 42px;
+    width: 500px;
+    margin: 10px auto 0 auto;
+    line-height: 56px;
+}
+
+.btn {
+    margin: 30px auto 0 auto;
+}
+
 }
 
 </style>

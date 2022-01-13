@@ -101,7 +101,7 @@ export default {
 
 .prestations {
     margin-bottom: 100px;
-    margin-top: -50px;
+    margin-top: 50px;
 }
 .title_prestations {
   text-align: center;
@@ -123,7 +123,7 @@ export default {
   background-color: var(--baseline);
   text-align: center;
   height: 330px;
-
+width: 100px;
   padding: 40px 20px;
 
   display: block;

@@ -231,7 +231,7 @@ footer {
 @media screen and (min-width: 1024px) {
 
   footer {
-    margin-top: 200px;
+    margin-top: 00px;
   }
   .container_footer {
     max-width: 900px;

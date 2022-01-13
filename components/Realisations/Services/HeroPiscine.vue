@@ -1,7 +1,7 @@
 <template>
   <section class="hero_banner">
     <div class="hero_img">
-      <img src="~assets/img/png/rea_img.jpg" alt="" />
+      <img src="~assets/img/png/piscine_img_1.jpg" alt="" />
     </div>
     <div class="hero_content">
       <div class="title_hero">
@@ -36,12 +36,10 @@ export default {}
 
 /* PAGE */
 
-section {
-  overflow: hidden;
-}
+
 
 .hero_banner {
-  overflow-x: hidden;
+  
 
   position: relative;
   margin-top: 70px;
@@ -129,8 +127,8 @@ section {
   .title_hero h1 {
     margin-top: 30px;
     font-size: 34px;
-    line-height: 42px;
-    width: 400px;
+    line-height: 46px;
+    width: 350px;
     font-weight: 900;
     margin-bottom: 15px;
     color: var(--white);

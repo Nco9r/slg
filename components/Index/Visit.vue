@@ -26,7 +26,7 @@ export default {}
 .visit {
   background-color: var(--bleu);
 
-  padding: 50px 15px 70px 26px;
+  padding: 30px 15px 40px 26px;
   margin-top: 60px;
   background-image: url('~assets/img/svg/carre.svg');
   background-size: 135%;

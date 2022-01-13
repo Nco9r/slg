@@ -83,12 +83,26 @@ export default {}
 }
 
 @media screen and (min-width: 1024px) {
+  .block_news {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 100px auto;
+  }
 
-    .block_news {
-        display: flex;
-        justify-content: space-between;
-        max-width: 900px;
-        margin: auto;
-    }
+  .block_right {
+    background: transparent;
+    width: 55%;
+  }
+
+  .block_left {
+    background: transparent;
+    width: 43%;
+    margin-top: 0px;
+  }
+
+  .block_left img {
+    width: 100%;
+  }
 }
 </style>
