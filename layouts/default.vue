@@ -155,4 +155,10 @@ select {
   appearance: none;
   outline-color: var(--turquoise);
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    display: none;
+  }
+}
 </style>

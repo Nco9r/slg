@@ -328,9 +328,7 @@ a {
   animation: open 0.5s;
 }
 
-.open-leave-active {
-  animation: close 0.5s;
-}
+
 
 @media screen and (min-width: 1024px) {
   .header_mobile {
