@@ -1,8 +1,9 @@
 <template>
-  <div>
+  <div class="index">
     <div class="open">
       <img src="~assets/img/svg/wave_header.svg" alt="" />
     </div>
+   
     <main>
       <hero />
       <story />
@@ -50,6 +51,10 @@ export default {
 </script>
 
 <style scoped>
+
+.index {
+  overflow: hidden;
+}
 .open {
   position: fixed;
   inset: 0;
@@ -94,4 +99,6 @@ export default {
     opacity: 1;
   }
 }
+
+
 </style>

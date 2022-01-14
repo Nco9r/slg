@@ -1,5 +1,8 @@
 <template>
   <header>
+    <div class="top_header">
+      <p>Demande de devis ici - 06 14 64 58 48 </p>
+    </div>
     <div class="header_mobile">
       <div class="logo_header">
         <img src="~assets/img/png/logo.png" alt="" />
@@ -95,9 +98,34 @@ export default {
 a {
     text-decoration: none;
 }
-.header_mobile {
+
+.top_header {
   position: fixed;
   top: 0;
+  left: 0;
+  background-color: var(--yellow);
+  right: 0;
+  z-index: 10;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+
+.top_header p{
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--bleu);
+
+}
+
+.header_mobile {
+  position: fixed;
+  
+  
+    box-shadow: rgb(48 41 41 / 4%) 0px 2px 2px 1px;
+  top: 30px;
   left: 0;
   background-color: var(--white);
   right: 0;

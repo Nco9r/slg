@@ -1,7 +1,22 @@
 <template>
   <section class="hero_banner">
     <div class="hero_img">
-      <img src="~assets/img/png/home_img.jpg" alt="" />
+      <no-ssr>
+        <vue-tiny-slider v-bind="tinySliderOptions" ref="tinySlider">
+          <img src="~assets/img/png/home_img.jpg" alt="" />
+          
+          <img src="~assets/img/png/img_2.jpg" alt="" />
+
+        </vue-tiny-slider>
+      </no-ssr>
+       <div class="slide_tiny">
+      <button class="slidePrev" id="prev">
+        <img src="@/assets/img/svg/arrow.svg" alt="" />
+      </button>
+      <button class="slideNext" id="next">
+        <img src="@/assets/img/svg/arrow.svg" alt="" />
+      </button>
+    </div>
     </div>
     <div class="hero_content">
       <div class="title_hero">
@@ -13,8 +28,7 @@
       </div>
       <div class="btn">
         <nuxt-link to="/contact">
-        <p>Devis Gratuit</p>
-
+          <p>Devis Gratuit</p>
         </nuxt-link>
       </div>
     </div>
@@ -25,7 +39,30 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+        tinySliderOptions: {
+        mouseDrag: true,
+        loop: true,
+        items: 1,
+        nav: false,
+        autoplay: true,
+        navPosition: 'bottom',
+        autoplayTimeout: 3500,
+        speed: 500,
+        autoplayButtonOutput: false,
+        gutter: 0,
+        mode: 'carousel',
+        preventScrollOnTouch: 'auto',
+        controls: true,
+        prevButton: '#prev',
+        nextButton: '#next',
+      },
+    }
+  }
+}
+
 </script>
 
 <style scoped>
@@ -37,12 +74,13 @@ export default {}
 
 /* PAGE */
 
-
 .hero_banner {
-
-
   position: relative;
   margin-top: 70px;
+}
+
+.hero_img {
+  position: relative;
 }
 
 .hero_img img {
@@ -53,8 +91,9 @@ export default {}
 
 .hero_content {
   background-color: var(--bleu);
-  margin-top: -10px;
+  margin-top: -20px;
   width: 100%;
+  z-index: 11;
   height: 510px;
   background-image: url('~assets/img/svg/carre.svg');
   background-size: 135%;
@@ -68,6 +107,60 @@ export default {}
   font-weight: 900;
   margin-bottom: 15px;
   color: var(--white);
+}
+
+.tns-item {
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  display: block;
+}
+
+.tns-gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.slide_tiny {
+
+
+}
+
+/* .tns-item {
+  padding: 40px 20px;
+  margin-left: 25px;
+  margin-right: 15px;
+  text-align: center;
+  width: 325px!important;
+} */
+
+
+.slide_tiny .slidePrev {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+
+.slide_tiny .slideNext {
+ border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+.slide_tiny .slidePrev img {
+  transform: rotate(180deg);
+  width: 25px;
+}
+.slide_tiny .slideNext img {
+
+  width: 25px;
 }
 
 .btn {
@@ -106,7 +199,7 @@ export default {}
     margin-right: -90px;
   }
 
-  .btn {
+  .btn  {
     margin: 0;
   }
 
@@ -118,7 +211,7 @@ export default {}
     position: absolute;
     width: 500px;
     height: 500px;
-  
+
     right: 0;
     padding: 20px 30px 40px 50px;
     bottom: -50px;
