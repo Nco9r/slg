@@ -27,6 +27,7 @@
         <p>Terrassement</p>
       </div>
     </div>
+    <transition name="open" appear>    
     <div class="box_projets" v-if="piscine">
       <div class="projet">
         <img src="~assets/img/png/img_2.jpg" alt="" />
@@ -54,6 +55,8 @@
       </div>
       
     </div>
+    </transition>
+    <transition name="open" appear>   
     <div class="box_projets" v-if="maconnerie">
       
       <div class="projet">
@@ -65,6 +68,8 @@
         </div>
       </div>
     </div>
+    </transition>
+    <transition name="open" appear>   
      <div class="box_projets" v-if="ter">
       
       <div class="projet">
@@ -76,6 +81,7 @@
         </div>
       </div>
     </div>
+    </transition>
   </section>
 </template>
 
@@ -191,5 +197,31 @@ export default {
   color: var(--white);
   font-size: 14px;
   font-weight: 400;
+}
+
+@keyframes open {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
+@keyframes close {
+  from {
+    opacity: 1; 
+  }
+  to {
+    opacity: 0; 
+  }
+}
+
+.open-enter-active {
+  animation: open 1s;
+}
+
+.open-leave-active {
+  animation: close 0.3s;
 }
 </style>
