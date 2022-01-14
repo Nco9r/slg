@@ -1,18 +1,33 @@
 <template>
   <section class="visit">
     <div class="title_visit">
-      <h3>Une visite préalable dédiée à l’expertise et au conseil.</h3>
-      <img src="~assets/img/svg/wave.svg" alt="" />
+      <h3   data-aos="fade-up"
+          data-aos-offset="10"
+          data-aos-delay="50"
+          data-aos-duration="900">Une visite préalable dédiée à l’expertise et au conseil.</h3>
+      <img   data-aos="fade-up"
+          data-aos-offset="10"
+          data-aos-delay="50"
+          data-aos-duration="900" src="~assets/img/svg/wave.svg" alt="" />
     </div>
     <div class="content_visit">
-      <p>
+      <p   data-aos="fade-up"
+          data-aos-offset="10"
+          data-aos-delay="60"
+          data-aos-duration="900">
         Vous avez besoin d’une de nos prestations ? Nous nous tenons à votre
         disposition pour tout type d’intervention sur Bordeaux Métropole et sa
         Région.
       </p>
-      <p>Devis et déplacements gratuits !</p>
+      <p   data-aos="fade-up"
+          data-aos-offset="10"
+          data-aos-delay="70"
+          data-aos-duration="900">Devis et déplacements gratuits !</p>
     </div>
-    <div class="btn">
+    <div class="btn"   data-aos="fade-up"
+          data-aos-offset="10"
+          data-aos-delay="80"
+          data-aos-duration="900">
         <p>Estimer mon projet</p>
     </div>
   </section>

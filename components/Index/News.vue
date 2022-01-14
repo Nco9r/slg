@@ -6,24 +6,62 @@
       </div>
       <div class="block_right">
         <div class="news_title">
-          <p>Nouveau</p>
+          <p
+            data-aos="fade-up"
+            data-aos-offset="10"
+            data-aos-delay="50"
+            data-aos-duration="900"
+          >
+            Nouveau
+          </p>
         </div>
         <div class="title_block">
-          <h3>Automatisez votre piscine</h3>
+          <h3
+            data-aos="fade-up"
+            data-aos-offset="10"
+            data-aos-delay="50"
+            data-aos-duration="900"
+          >
+            Automatisez votre piscine
+          </h3>
         </div>
         <div class="content_block">
-          <p>
+          <p
+            data-aos="fade-up"
+            data-aos-offset="10"
+            data-aos-delay="60"
+            data-aos-duration="900"
+          >
             Avec le coffret connecté piscine tild et son application smartphone,
             faites le choix d’un bassin automatisé en toute simplicité !
           </p>
-          <p>
+          <p
+            data-aos="fade-up"
+            data-aos-offset="10"
+            data-aos-delay="70"
+            data-aos-duration="900"
+          >
             Entre filtration adaptée à la température de l’eau toute l’année,
             pilotage complet des projecteurs à tout moment sur le smartphone,
-            tild devient votre assistant personnel rêvé. 
+            tild devient votre assistant personnel rêvé.
           </p>
-          <p>N'hesitez pas à nous contacter pour avoir de plus amples informations</p>
+          <p
+            data-aos="fade-up"
+            data-aos-offset="10"
+            data-aos-delay="80"
+            data-aos-duration="900"
+          >
+            N'hesitez pas à nous contacter pour avoir de plus amples
+            informations
+          </p>
         </div>
-        <div class="btn">
+        <div
+          class="btn"
+          data-aos="fade-up"
+          data-aos-offset="10"
+          data-aos-delay="90"
+          data-aos-duration="900"
+        >
           <p>En savoir plus</p>
         </div>
       </div>
