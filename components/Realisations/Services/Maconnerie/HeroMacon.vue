@@ -1,24 +1,20 @@
 <template>
   <section class="hero_banner">
     <div class="hero_img">
-      <img src="~assets/img/png/contact_img.jpg" alt="" />
+      <img src="~assets/img/png/macon_img.jpg" alt="" />
     </div>
     <div class="hero_content">
       <div class="title_hero">
         <h1>
-          Contactez nous pour tous <span class="turquoise">renseignements.</span>
+          Maçonnerie<span class="turquoise"> Générale</span> à Cestas, Bordeaux et sa Région.
         </h1>
         <img src="~assets/img/svg/wave.svg" alt="" />
       </div>
-      <div class="items_infos">
-          <div class="item">
-              <img src="~assets/img/svg/mail.svg" alt="">
-              <p>contact@slgrealisation.fr</p>
-          </div>
-          <div class="item">
-              <img src="~assets/img/svg/phone.svg" alt="">
-              <p>06 14 64 58 48</p>
-          </div>
+      <div class="btn">
+        <nuxt-link to="/contact">
+        <p>Devis Gratuit</p>
+
+        </nuxt-link>
       </div>
     </div>
     <div class="mouse">
@@ -34,21 +30,16 @@ export default {}
 <style scoped>
 /* VARIABLES */
 
-.turquoise {
-  color: var(--turquoise);
-}
 
 /* PAGE */
 
-section {
-    overflow: hidden;
-}
+
 
 .hero_banner {
-  overflow-x: hidden;
+  
 
   position: relative;
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .hero_img img {
@@ -91,29 +82,6 @@ section {
   animation: scroll 1.2s infinite ease-in-out;
 }
 
-.items_infos {
-    margin-top: 30px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
-
-.item {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.item:nth-child(2) {
-    display: flex;margin-left: 3px;
-    margin-bottom: 10px;
-}
-
-.item p {
-    margin-left: 10px;
-    color: var(--white);
-    font-weight: bold;
-}
-
 @keyframes scroll {
   0% {
     transform: translateY(0px);
@@ -129,9 +97,14 @@ section {
 @media screen and (min-width: 1024px) {
   .hero_img img {
     width: 84.2%;
+
     object-fit: cover;
     height: 90vh;
     margin-right: -90px;
+  }
+
+  .btn {
+    margin: 0;
   }
 
   .hero_banner {
@@ -151,17 +124,16 @@ section {
   .title_hero h1 {
     margin-top: 30px;
     font-size: 34px;
-    line-height: 42px;
-    width: 300px;
+    line-height: 46px;
+    width: 350px;
     font-weight: 900;
     margin-bottom: 15px;
     color: var(--white);
   }
   .mouse {
-    bottom: 70px;
+    bottom: 130px;
 
-    left: 90%;
+    left: 95%;
   }
-
 }
 </style>

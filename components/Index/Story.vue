@@ -9,7 +9,7 @@
           data-aos-duration="900"
           
         >
-          <span class="yellow">SLGrealisation</span> propose ses service de la
+          <span class="yellow">SLGrealisation</span> propose ses services de la
           maison à la piscine.
         </h2>
         <h3 data-aos="fade-up"

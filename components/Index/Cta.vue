@@ -4,7 +4,7 @@
           <h3>Réalisons <span class="turquoise">ensemble</span> vos projets</h3>
       </div>
       <div class="content_cta">
-          <p>Obtenez un devis rapidement en nous contactant</p>
+          <p>Obtenez un devis rapidement en nous contactant.</p>
       </div>
       <div class="btn">
             <nuxt-link to="/contact#form">
@@ -25,8 +25,8 @@ export default {
 
 .cta {
     background-image: url('~assets/img/png/cta_img.jpg');
-    margin-top: 100px;
-    height: 400px;
+    margin-top: 50px;
+    height: 320px;
     background-size: cover;
     text-align: center;
     padding: 40px 20px;
@@ -34,6 +34,7 @@ export default {
 
 .title_cta h3 {
     color: var(--white);
+    font-size: 32px;
 }
 
 .content_cta p{

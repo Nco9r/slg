@@ -142,7 +142,7 @@ export default {
 }
 
 .active {
-  background-color: var(--yellow);
+   background: linear-gradient(90deg, rgba(251,204,46,1) 0%, rgba(255,216,0,1) 100%);
   color: var(--bleu);
   font-weight: bold;
 }
@@ -167,7 +167,7 @@ export default {
 
 .bck {
   position: absolute;
-  top: 0;
+  top: 120px;
   left: 0;
   right: 0;
   bottom: 9px;
@@ -175,7 +175,7 @@ export default {
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(6, 73, 86, 0.9) 80%
+    rgba(6, 73, 86, 0.7) 40%
   );
   z-index: 3;
 }
@@ -183,7 +183,7 @@ export default {
 .cta_projet {
   position: absolute;
   left: 30px;
-  bottom: 40px;
+  bottom: 30px;
   z-index: 4;
 }
 

@@ -121,8 +121,11 @@ a {
 
 footer {
   background-color: var(--bleu);
-  background-image: url('~assets/img/svg/carre.svg');
-  background-size: 35%;
+  background-image: url('~assets/img/svg/plamier_2.svg');
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: 150% 120%;
+
 
 }
 

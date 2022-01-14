@@ -16,9 +16,10 @@ export default {}
 
 <style scoped>
 .maaf {
-  margin: 30px 10px;
+  margin: 30px 15px 0px 15px;
   background-color: var(--baseline);
   padding: 30px;
+  border-radius: 0 25px 0 25px;
 }
 
 .title_maaf h3 {

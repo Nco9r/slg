@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="top_header">
-      <p>Demande de devis ici - 06 14 64 58 48 </p>
+      <p>Demande de devis gratuit - 06 14 64 58 48</p>
     </div>
     <div class="header_mobile">
       <div class="logo_header">
@@ -21,22 +21,20 @@
               <hr />
             </div>
             <div class="items" @click="open = !open">
-                <nuxt-link to="/">
-              <p>Accueil</p>
-                </nuxt-link>
-                <nuxt-link to="/services/creation-de-piscine">
-              <p>Nos services</p>
-                </nuxt-link>
+              <nuxt-link to="/">
+                <p>Accueil</p>
+              </nuxt-link>
+              <nuxt-link to="/services/creation-de-piscine">
+                <p>Nos services</p>
+              </nuxt-link>
               <nuxt-link to="/realisations">
-              <p>Nos réalisations</p>
+                <p>Nos réalisations</p>
               </nuxt-link>
             </div>
             <nuxt-link to="/contact">
-
-   
-            <div class="btn" @click="open = !open">
-              <p>Contact</p>
-            </div>
+              <div class="btn" @click="open = !open">
+                <p>Contact</p>
+              </div>
             </nuxt-link>
             <div class="sociaux">
               <a href="" target="_blank">
@@ -54,31 +52,37 @@
           <div class="wave_header">
             <img src="~assets/img/svg/wave_header.svg" alt="" />
           </div>
+          <div class="palmier">
+            <img src="~assets/img/svg/palmier.svg" alt="" />
+          </div>
+          <div class="palmier_2">
+            <img src="~assets/img/svg/plamier_2.svg" alt="" />
+          </div>
         </div>
       </transition>
     </div>
     <div class="header_desktop">
-        <div class="desktop">
-      <div class="block_header">
-        <div class="block_left">
-          <img src="~assets/img/png/logo.png" alt="" />
-        </div>
-        <div class="block_right">
-          <div class="item_desktop">
+      <div class="desktop">
+        <div class="block_header">
+          <div class="block_left">
+            <img src="~assets/img/png/logo.png" alt="" />
+          </div>
+          <div class="block_right">
+            <div class="item_desktop">
               <nuxt-link to="/">
-              <p>Accueil</p>
-            </nuxt-link>
-            <nuxt-link to="/contact">
-              <p>Nos services</p>
-            </nuxt-link>
-            <p>Nos réalisations</p>
-            <div class="btn">
-              <p>Contact</p>
+                <p>Accueil</p>
+              </nuxt-link>
+              <nuxt-link to="/contact">
+                <p>Nos services</p>
+              </nuxt-link>
+              <p>Nos réalisations</p>
+              <div class="btn">
+                <p>Contact</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-        </div>
     </div>
   </header>
 </template>
@@ -94,16 +98,19 @@ export default {
 </script>
 
 <style scoped>
-
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .top_header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--yellow);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 204, 46, 1) 0%,
+    rgba(255, 216, 0, 1) 100%
+  );
   right: 0;
   z-index: 10;
   padding: 10px 25px;
@@ -113,18 +120,16 @@ a {
   height: 30px;
 }
 
-.top_header p{
+.top_header p {
   font-size: 12px;
   font-weight: bold;
   color: var(--bleu);
-
 }
 
 .header_mobile {
   position: fixed;
-  
-  
-    box-shadow: rgb(48 41 41 / 4%) 0px 2px 2px 1px;
+
+  box-shadow: rgb(48 41 41 / 4%) 0px 2px 2px 1px;
   top: 30px;
   left: 0;
   background-color: var(--white);
@@ -138,7 +143,7 @@ a {
 }
 
 .header_desktop {
-    display: none;
+  display: none;
 }
 
 .logo_header img {
@@ -192,11 +197,11 @@ a {
   animation-delay: 0.1s;
 }
 
-.items  p:nth-child(2) {
+.items p:nth-child(2) {
   animation-delay: 0.2s;
 }
 
-.items   p:nth-child(3) {
+.items p:nth-child(3) {
   animation-delay: 0.3s;
 }
 
@@ -220,15 +225,70 @@ a {
   margin-right: 20px;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translatey(-10px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce_2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translatey(-30px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.palmier {
+  position: absolute;
+  bottom: 30px;
+  left: -50px;
+  -webkit-animation: bounce 3.5s;
+  animation: bounce 3.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.palmier img {
+  width: 200px;
+}
+.palmier_2 {
+  position: absolute;
+  bottom: 10px;
+  right: -57px;
+  -webkit-animation: bounce_2 2.5s;
+  animation: bounce_2 3.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.palmier_2 img {
+  width: 180px;
+}
+
 .wave_header {
   position: absolute;
   bottom: -90px;
   left: 0px;
   animation: move_wave 0.6s ease-in-out;
   animation-fill-mode: forwards;
-
   right: 0px;
 }
+
 @keyframes move_wave {
   from {
     transform: translateY(90px);
@@ -276,14 +336,13 @@ a {
   }
 
   .header_desktop {
-      display: flex;
+    display: flex;
   }
 
   .desktop {
     position: fixed;
     top: 0;
 
-  
     left: 0;
     right: 0;
     z-index: 10;
@@ -315,7 +374,6 @@ a {
     font-weight: bold;
     color: var(--bleu);
   }
-
 
   .btn {
     width: 150px;

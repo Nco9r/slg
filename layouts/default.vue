@@ -46,6 +46,7 @@ html {
   --turquoise: #46b3bc;
   --turquoise-light: #b0e2e6;
   --yellow: #fbcc2e;
+  --orange: #CE7D5F;
   --baseline: #f1f5f6;
   --background-gradient: linear-gradient(
     180deg,
@@ -72,7 +73,7 @@ h3 {
 }
 
 .btn {
-  background-color: var(--yellow);
+ background: linear-gradient(90deg, rgba(251,204,46,1) 0%, rgba(255,216,0,1) 100%);
   padding: 12px 18px;
   border-radius: 0 25px 0 25px;
   width: 250px;

@@ -3,15 +3,15 @@
     <div class="block_content">
       <div class="content_right">
         <div class="content_img">
-          <img src="~assets/img/svg/icon_piscine.svg" alt="" />
-          <img src="~assets/img/png/contentpiscine_img.jpg" alt="" />
+          <img src="~assets/img/svg/icon_mac.svg" alt="" />
+          <img src="~assets/img/png/img_macon.jpg" alt="" />
           <div class="rec"></div>
         </div>
       </div>
       <div class="content_left">
         <div class="title_left">
           <p>Services</p>
-          <h3>Création de piscine</h3>
+          <h3>Maçonnerie Générale</h3>
         </div>
         <div class="content">
           <p>
@@ -39,7 +39,7 @@
             </nuxt-link>
           </div>
           <div class="btn">
-               <nuxt-link to="/realisations">
+               <nuxt-link to="/contact">
             <p>Devis gratuit</p>
                </nuxt-link>
           </div>
@@ -62,6 +62,7 @@ export default {}
 
 .turquoise {
   font-weight: bold;
+  color: var(--orange);
 }
 
 .block_content {
@@ -93,7 +94,7 @@ export default {}
   z-index: -1;
   width: 200px;
   height: 200px;
-  background-color: var(--turquoise);
+  background-color: var(--orange);
 }
 
 .content_img img:nth-child(2) {

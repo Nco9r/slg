@@ -23,7 +23,9 @@
               </p>
             </div>
             <div class="btn_card">
+                 <nuxt-link to="/services/maçonnerie-generale">
               <p>En savoir plus</p>
+                 </nuxt-link>
             </div>
           </div>
           <div class="card">
