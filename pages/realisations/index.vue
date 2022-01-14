@@ -5,7 +5,7 @@
     </div>
       <main>
           <hero-rea/>
-          <story/>
+        
           <search-rea/>
           <Cta/>
 

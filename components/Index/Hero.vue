@@ -124,11 +124,6 @@ export default {
   justify-content: center;
 }
 
-.slide_tiny {
-
-
-}
-
 /* .tns-item {
   padding: 40px 20px;
   margin-left: 25px;

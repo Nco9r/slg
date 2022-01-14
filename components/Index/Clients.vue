@@ -202,7 +202,7 @@ tns-nav-active {
 
 .card_client {
   background-color: var(--white);
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.041);
+ box-shadow: rgb(0 0 0 / 10%) 0px 10px 30px;
   height: 350px;
   border-radius: 0 25px 0 25px;
   width: 200px;
