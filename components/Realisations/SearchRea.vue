@@ -222,6 +222,6 @@ export default {
 }
 
 .open-leave-active {
-  animation: close 0.3s;
+  animation: close 1s;
 }
 </style>

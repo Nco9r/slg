@@ -62,7 +62,9 @@
           data-aos-delay="130"
           data-aos-duration="900"
         >
+        <nuxt-link to="/contact">
           <p>En savoir plus</p>
+        </nuxt-link>
         </div>
       </div>
     </div>

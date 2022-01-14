@@ -9,6 +9,7 @@
     <a
       href="https://www.google.com/maps/place/Slgrealisation/@44.7567425,-0.7371421,15z/data=!4m5!3m4!1s0x0:0xa0c815c1940cf19a!8m2!3d44.7567425!4d-0.7371421"
       target="_blank"
+      rel="noopener noreferrer"
     >
       <div class="img_map">
         <img src="~assets/img/svg/points.svg" alt="" />

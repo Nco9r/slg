@@ -11,7 +11,9 @@
       <img src="~assets/img/png/img_4.jpg" alt="" />
     </div>
     <div class="btn">
+      <nuxt-link to="/realisations">
         <p>Nos réalisations</p>
+      </nuxt-link>
     </div>
   </section>
 </template>
@@ -39,6 +41,7 @@ export default {
 .title_rea img {
   margin-bottom: 5px;
   padding: 0 16px;
+
 }
 
 .box_cards {
@@ -64,6 +67,7 @@ export default {
   margin-bottom: 20px;
   z-index: 2;
   height: 100%;
+  border-radius: 0 25px 0 25px;
   object-fit: cover;
 }
 

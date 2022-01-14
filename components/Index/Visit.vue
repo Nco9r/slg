@@ -28,7 +28,9 @@
           data-aos-offset="10"
           data-aos-delay="100"
           data-aos-duration="900">
+          <nuxt-link to="/contact#form">
         <p>Estimer mon projet</p>
+          </nuxt-link>
     </div>
   </section>
 </template>
