@@ -7,19 +7,20 @@
           data-aos-offset="10"
           data-aos-delay="50"
           data-aos-duration="900"
+          
         >
           <span class="yellow">SLGrealisation</span> propose ses service de la
           maison à la piscine.
         </h2>
         <h3 data-aos="fade-up"
           data-aos-offset="10"
-          data-aos-delay="60"
+          data-aos-delay="70"
           data-aos-duration="900">L'entreprise marche en famille</h3>
       </div>
       <div class="block_right">
         <p data-aos="fade-up"
           data-aos-offset="10"
-          data-aos-delay="70"
+          data-aos-delay="90"
           data-aos-duration="900">
           Nous sommes en mesure de répondre à tous vos besoins en matière de
           création de piscine de A à Z, de maçonnerie générale ou de
@@ -42,7 +43,9 @@ export default { mixins: [aosMixin] }
 .yellow {
   color: var(--yellow);
 }
-
+.aos-distance {
+transform: translateY(50px);
+} 
 /* PAGE */
 
 .story {

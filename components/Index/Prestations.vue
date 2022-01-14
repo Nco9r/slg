@@ -225,6 +225,8 @@ margin-left: 20px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  margin-top: -50px;
+  margin-bottom: 20px;
 }
 
 /* .tns-item {

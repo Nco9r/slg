@@ -20,11 +20,56 @@
               <p>
                 Travail en famille rapide et de grande qualité Intervenants très
                 disponibles à l'écoute et de bon conseil Le choix du matériel de
-                la piscine de qualité
+                la piscine de qualité !
               </p>
             </div>
             <div class="client">
               <p>Pascal Barbeau -</p>
+              <p>Création piscine</p>
+            </div>
+          </div>
+          <div class="card_client">
+            <div class="entete">
+              <div class="name">
+                <p>P</p>
+              </div>
+              <div class="logo">
+                <img src="~assets/img/svg/gb.svg" alt="" />
+              </div>
+            </div>
+            <div class="content_card_client">
+              <p>
+                Extrêmement satisfait de la construction d'une piscine par cette
+                entreprise : conseil, compétence, réalisation soignée , le tout
+                au top et en respectant le calendrier fixé ! Sans oublier la
+                disponibilité et la gentillesse!!! Je la recommande sans aucune
+                hésitation
+              </p>
+            </div>
+            <div class="client">
+              <p>Dubern Eric -</p>
+              <p>Création piscine</p>
+            </div>
+          </div>
+          <div class="card_client">
+            <div class="entete">
+              <div class="name">
+                <p>P</p>
+              </div>
+              <div class="logo">
+                <img src="~assets/img/svg/gb.svg" alt="" />
+              </div>
+            </div>
+            <div class="content_card_client">
+              <p>
+                Une entreprise très sérieuse avec des personnes à l'écoute de
+                vos projets. En résulte, un travail de grande qualité. Toujours
+                à l'heure et un chantier très propre. Nous sommes très
+                satisfaits et recommandons vivement Slg.realisation !!
+              </p>
+            </div>
+            <div class="client">
+              <p>Audrey Issury -</p>
               <p>Création piscine</p>
             </div>
           </div>
@@ -40,7 +85,7 @@
             <div class="content_card_client">
               <p>
                 Une entreprise effectuant un travail remarquable. Très sérieux.
-                Je recommande vivement
+                Je recommande vivement !
               </p>
             </div>
             <div class="client">
@@ -73,7 +118,7 @@
       </no-ssr>
     </div>
     <div class="btn center">
-        <p>Voir nos avis</p>
+      <p>Voir nos avis</p>
     </div>
   </section>
 </template>
@@ -88,8 +133,8 @@ export default {
         items: 1,
         nav: true,
         autoplay: true,
-navPosition: 'bottom',
-         autoplayTimeout: 3500,
+        navPosition: 'bottom',
+        autoplayTimeout: 3500,
         speed: 500,
         autoplayButtonOutput: false,
         gutter: 0,
@@ -113,53 +158,48 @@ navPosition: 'bottom',
 }
 </script>
 
-<style >
+<style>
 .clients {
   padding: 0 0px;
   margin-bottom: 50px;
-
 }
 .title_client {
   text-align: center;
 }
 
 .box_cards_clients {
-  margin-top: 50px;
+  margin-top: 20px;
   position: relative;
   margin-bottom: 30px;
 }
 
 .tns-nav {
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  width: 100px;
+  margin: auto;
 }
 
 .tns-nav button {
-
-
-  border: 1Px solid var(--turquoise);
+  border: 1px solid var(--turquoise);
   background-color: transparent;
   margin-right: 10px;
   height: 14px;
-  ;
-  width: 12px;
+  width: 14px;
   border-radius: 50%;
 }
 
 tns-nav-active {
-  background-color: var(--bleu)!important;
-
+  background-color: var(--bleu) !important;
 }
 
-
-
 .card_client {
-   background-color: var(--white);
-  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  background-color: var(--white);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
   height: 350px;
   width: 200px;
-  padding: 40px 20px;
+  padding: 30px 20px;
   display: block;
 }
 
@@ -181,12 +221,14 @@ tns-nav-active {
   font-weight: bold;
 }
 
-
 .content_card_client p {
   line-height: 28px;
   margin-top: 20px;
-  height: 130px;
+  height: 133px;
   color: var(--bleu);
+  text-overflow: ellipsis;
+
+  overflow: hidden;
 }
 
 .client {
@@ -195,11 +237,10 @@ tns-nav-active {
   margin-bottom: 20px;
 }
 
-
 .tns-item {
-  margin-right: 20px;
-margin-left: 20px;
-margin-bottom: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
   display: block;
 }
 
@@ -218,8 +259,8 @@ margin-bottom: 20px;
 }
 
 .center {
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 </style>

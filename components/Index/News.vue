@@ -29,7 +29,7 @@
           <p
             data-aos="fade-up"
             data-aos-offset="10"
-            data-aos-delay="60"
+            data-aos-delay="70"
             data-aos-duration="900"
           >
             Avec le coffret connecté piscine tild et son application smartphone,
@@ -38,7 +38,7 @@
           <p
             data-aos="fade-up"
             data-aos-offset="10"
-            data-aos-delay="70"
+            data-aos-delay="90"
             data-aos-duration="900"
           >
             Entre filtration adaptée à la température de l’eau toute l’année,
@@ -48,7 +48,7 @@
           <p
             data-aos="fade-up"
             data-aos-offset="10"
-            data-aos-delay="80"
+            data-aos-delay="110"
             data-aos-duration="900"
           >
             N'hesitez pas à nous contacter pour avoir de plus amples
@@ -59,7 +59,7 @@
           class="btn"
           data-aos="fade-up"
           data-aos-offset="10"
-          data-aos-delay="90"
+          data-aos-delay="130"
           data-aos-duration="900"
         >
           <p>En savoir plus</p>

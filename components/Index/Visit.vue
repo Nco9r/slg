@@ -13,7 +13,7 @@
     <div class="content_visit">
       <p   data-aos="fade-up"
           data-aos-offset="10"
-          data-aos-delay="60"
+          data-aos-delay="70"
           data-aos-duration="900">
         Vous avez besoin d’une de nos prestations ? Nous nous tenons à votre
         disposition pour tout type d’intervention sur Bordeaux Métropole et sa
@@ -21,12 +21,12 @@
       </p>
       <p   data-aos="fade-up"
           data-aos-offset="10"
-          data-aos-delay="70"
+          data-aos-delay="90"
           data-aos-duration="900">Devis et déplacements gratuits !</p>
     </div>
     <div class="btn"   data-aos="fade-up"
           data-aos-offset="10"
-          data-aos-delay="80"
+          data-aos-delay="100"
           data-aos-duration="900">
         <p>Estimer mon projet</p>
     </div>
