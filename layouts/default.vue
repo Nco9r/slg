@@ -112,7 +112,7 @@ h3 {
 
 input {
   padding: 16px 26px;
-  border: none;
+  border: 1px solid var(--bleu);
   border-radius: 0 25px 0 25px;
   width: 100%;
   font-family: 'Work sans', sans-serif;
@@ -124,7 +124,8 @@ input {
 
 textarea {
   padding: 16px 26px;
-  border: none;
+    border: 1px solid var(--bleu);
+
   border-radius: 0 25px 0 25px;
   width: 100%;
   font-family: 'Work sans', sans-serif;
@@ -136,7 +137,8 @@ textarea {
 
 select {
   padding: 16px 26px;
-  border: none;
+    border: 1px solid var(--yellow);
+
   background-color: var(--bleu);
   border-radius: 0 25px 0 25px;
   width: 100%;
