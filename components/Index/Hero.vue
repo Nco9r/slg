@@ -47,6 +47,7 @@ export default {
         loop: true,
         items: 1,
         nav: false,
+         container: '.hero_img',
         autoplay: true,
         navPosition: 'bottom',
         autoplayTimeout: 3500,
@@ -131,6 +132,9 @@ export default {
   text-align: center;
   width: 325px!important;
 } */
+
+
+
 
 
 .slide_tiny .slidePrev {

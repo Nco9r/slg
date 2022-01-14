@@ -3,24 +3,25 @@
     <div class="block_content">
       <div class="content_right">
         <div class="content_img">
-          <img src="~assets/img/svg/icon_mac.svg" alt="" />
-          <img src="~assets/img/png/img_macon.jpg" alt="" />
+          <img src="~assets/img/svg/icon_ter.svg" alt="" />
+          <img src="~assets/img/png/img_4.jpg" alt="" />
           <div class="rec"></div>
         </div>
       </div>
       <div class="content_left">
         <div class="title_left">
           <p>Services</p>
-          <h3>Maçonnerie Générale</h3>
+          <h3>Terrassement - Assainissement</h3>
         </div>
         <div class="content">
           <p>
             SLGrealisation vous propose la réalisation de
-            <span class="turquoise">maison ou extension</span> brique à coller ou traditionnel selon vos choix. 
-            Nous pouvons également intervenir sur les aménagement extérieur comme les murettes, le pool house ou encore les terasses.
+            <span class="turquoise">votre terrasement ou de votre assainissement</span>.
+           Nous pouvons réaliser différents types de prestations comme le chemin d’accès , le passage de réseau divers ou encore la pose de casier drainant. Nous intervenons aussi bien sur maison neuve que sur rénovation.
+           
           </p>
           <p>
-           
+            De plus, nous vous proposons également <span class="turquoise">la création</span> de terrain de pétanque de toute taille. De quoi égayer vos soirées d'été !
           </p>
         </div>
         <div class="btn_block">
@@ -53,7 +54,7 @@ export default {}
 
 .turquoise {
   font-weight: bold;
-  color: var(--orange);
+  color: var(--yellow);
 }
 
 .block_content {
@@ -73,7 +74,7 @@ export default {}
 .content_img img:nth-child(1) {
   position: absolute;
   top: -10px;
-  width: 70px;
+  width: 90px;
   height: 70px;
   left: -20px;
 }
@@ -85,7 +86,7 @@ export default {}
   z-index: -1;
   width: 200px;
   height: 200px;
-  background-color: var(--orange);
+  background-color: var(--yellow);
 }
 
 .content_img img:nth-child(2) {

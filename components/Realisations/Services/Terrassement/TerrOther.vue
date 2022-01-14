@@ -1,7 +1,7 @@
 <template>
   <section class="prestations">
     <div class="title_prestations">
-      <h3>Nos différentes prestations</h3>
+      <h3>Nos autres prestations</h3>
       <img src="~assets/img/svg/wave.svg" alt="" />
     </div>
     <div class="box_cards">
@@ -10,31 +10,30 @@
       <no-ssr>
         <vue-tiny-slider v-bind="tinySliderOptions" ref="tinySlider">
           <div class="card">
-            <div class="img_card">
-              <img src="~assets/img/svg/icon_pis.svg" alt="" />
+            <div class="img_card second">
+              <img src="~assets/img/svg/icon_piscine.svg" alt="" />
             </div>
             <div class="title_card">
               <h4>Création de piscine</h4>
             </div>
             <div class="content_card">
               <p>
-                Réalisation de piscine traditionnelle ou en block polystyrène.
+              Réalisation de piscine traditionnelle ou en block polystyrène.
                 Toute taille fond incliné ou droit.
               </p>
             </div>
             <div class="btn_card">
-              <nuxt-link to="/services/creation-de-piscine">
+                 <nuxt-link to="/services/creation-de-piscine">
               <p>En savoir plus</p>
-              </nuxt-link>
+                 </nuxt-link>
             </div>
           </div>
           <div class="card">
-            <div class="img_card second">
+            <div class="img_card">
               <img src="~assets/img/svg/icon_mac.svg" alt="" />
             </div>
             <div class="title_card">
-
-              <h4>Maçonnerie generale</h4>
+              <h4>Maçonnerie Générale</h4>
             </div>
             <div class="content_card">
               <p>
@@ -43,28 +42,9 @@
               </p>
             </div>
             <div class="btn_card">
-               <nuxt-link to="/services/maçonnerie-generale">
+                  <nuxt-link to="/services/maçonnerie-generale">
               <p>En savoir plus</p>
-               </nuxt-link>
-            </div>
-          </div>
-          <div class="card">
-            <div class="img_card">
-              <img src="~assets/img/svg/icon_ter.svg" alt="" />
-            </div>
-            <div class="title_card">
-              <h4>Terrassement</h4>
-            </div>
-            <div class="content_card">
-              <p>
-                Chemin d’accès, passage de réseau divers, pose de casier
-                drainant, terrain de pétanque.
-              </p>
-            </div>
-            <div class="btn_card">
-               <nuxt-link to="/services/terrassement">
-              <p>En savoir plus</p>
-               </nuxt-link>
+                  </nuxt-link>
             </div>
           </div>
         </vue-tiny-slider>
@@ -91,7 +71,6 @@ export default {
         loop: false,
         items: 1,
         nav: false,
-        container: '.box_cards',
         autoplayButtonOutput: false,
         gutter: 0,
         preventScrollOnTouch: 'auto',
@@ -123,6 +102,11 @@ export default {
 </script>
 
 <style scoped>
+
+.prestations {
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
 .title_prestations {
   text-align: center;
 }
@@ -139,16 +123,11 @@ export default {
   margin-bottom: 50px;
 }
 
-a {
-  text-decoration: none;
-  color: var(--turquoise);
-}
-
 .card {
   background-color: var(--white);
   text-align: center;
   height: 330px;
-
+width: 100px;
   padding: 40px 20px;
 
   display: block;
@@ -231,9 +210,6 @@ margin-left: 20px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  pointer-events: all;
 }
 
 /* .tns-item {

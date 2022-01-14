@@ -42,7 +42,9 @@
               </p>
             </div>
             <div class="btn_card">
+                <nuxt-link to="/services/terrassement">
               <p>En savoir plus</p>
+                </nuxt-link>
             </div>
           </div>
         </vue-tiny-slider>

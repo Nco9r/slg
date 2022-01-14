@@ -7,7 +7,7 @@
           <p>Obtenez un devis rapidement en nous contactant.</p>
       </div>
       <div class="btn">
-            <nuxt-link to="/contact#form">
+            <nuxt-link to="/contact">
           <p>Devis gratuit</p>
             </nuxt-link>
       </div>

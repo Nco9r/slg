@@ -4,15 +4,14 @@
       <img src="~assets/img/svg/wave_header.svg" alt="" />
     </div>
     <main>
-      <hero-piscine />
+        <hero-terr/>
       <div class="breadcrum">
-          <p>Accueil - Services - <span class="turquoise">Création de piscine</span></p>
+          <p>Accueil - Services - <span class="turquoise">Terrassement</span></p>
       </div>
       <story />
-      <content-piscine />
+      <ter-content/>
       <visit />
-      <news />
-      <prestations-piscine />
+    <terr-other/>
       <cta/>
     </main>
   </div>
@@ -23,18 +22,33 @@ import Cta from '../../components/Index/Cta.vue'
 import News from '../../components/Index/News.vue'
 import Story from '../../components/Index/Story.vue'
 import Visit from '../../components/Index/Visit.vue'
-import ContentPiscine from '../../components/Realisations/Services/ContentPiscine.vue'
-import HeroPiscine from '../../components/Realisations/Services/HeroPiscine.vue'
-import PrestationsPiscine from '../../components/Realisations/Services/PrestationsPiscine.vue'
+
+
+
+
+
+
+
+import HeroTerr from '../../components/Realisations/Services/Terrassement/HeroTerr.vue'
+import TerContent from '../../components/Realisations/Services/Terrassement/TerContent.vue'
+import TerrOther from '../../components/Realisations/Services/Terrassement/TerrOther.vue'
+
 export default {
   components: {
-    HeroPiscine,
+
     Story,
-    ContentPiscine,
-    PrestationsPiscine,
+
+
     News,
     Visit,
     Cta,
+
+
+
+ 
+    HeroTerr,
+    TerContent,
+    TerrOther,
   },
    
 }
@@ -49,8 +63,6 @@ export default {
   animation: bck 3s ease-in-out;
   animation-fill-mode: forwards;
 }
-
-
 
 .turquoise {
     font-weight: bold;

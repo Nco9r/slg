@@ -142,6 +142,7 @@ a {
   height: 70px;
 }
 
+
 .header_desktop {
   display: none;
 }
@@ -219,6 +220,7 @@ a {
 .sociaux {
   margin-bottom: 10px;
   margin-top: 50px;
+  z-index: 2;
 }
 .sociaux img {
   width: 25px;
@@ -251,7 +253,7 @@ a {
 
 .palmier {
   position: absolute;
-  bottom: 30px;
+  bottom: -10px;
   left: -50px;
   -webkit-animation: bounce 3.5s;
   animation: bounce 3.5s;

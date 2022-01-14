@@ -118,8 +118,7 @@
       </no-ssr>
     </div>
     <div class="btn center">
-      <a href="https://www.google.com/search?q=slg+realisation&rlz=1C5CHFA_enFR969FR969&oq=slg+re&aqs=chrome.0.69i59j46i39i175i199j69i57j0i512l2j69i60j69i61l2.1061j0j7&sourceid=chrome&ie=UTF-8#lrd=0xd54dd3bc92586dd:0xa0c815c1940cf19a,1,,,
-      " target="_blank" rel="noopener noreferrer">
+      <a href="https://www.google.com/search?q=slg+realisation&rlz=1C5CHFA_enFR969FR969&oq=slg+re&aqs=chrome.0.69i59j46i39i175i199j69i57j0i512l2j69i60j69i61l2.1061j0j7&sourceid=chrome&ie=UTF-8#lrd=0xd54dd3bc92586dd:0xa0c815c1940cf19a,1,,," target="_blank" rel="noopener noreferrer">
       <p>Voir nos avis</p>
       </a>
     </div>
