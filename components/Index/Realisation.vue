@@ -6,14 +6,17 @@
         <img src="~assets/img/svg/wave.svg" alt="" />
       </div>
       <div class="box_cards">
+        <nuxt-link to='/realisations'>
         <div class="box_point">
           <img src="~assets/img/svg/points.svg" alt="" />
         </div>
+        
         <img src="~assets/img/png/img_1.jpg" alt="" />
         <img src="~assets/img/png/img_2.jpg" alt="" />
         <img src="~assets/img/png/img_3.jpg" alt="" />
         <img src="~assets/img/png/img_4.jpg" alt="" />
         <div class="box_rec"></div>
+        </nuxt-link>
       </div>
       <nuxt-link to="/realisations">
         <div class="btn">Nos réalisations</div>
@@ -157,7 +160,7 @@ export default {
     width: 600px;
   }
 
-  .box_cards {
+  .box_cards a {
     display: flex;
     position: relative;
     flex-flow: row wrap;
@@ -165,14 +168,14 @@ export default {
     justify-content: space-between;
   }
 
-  .box_point {
+  a .box_point {
     position: absolute;
     display: flex;
     top: -30px;
     left: -30px;
   }
 
-  .box_rec {
+  a .box_rec {
     position: absolute;
     display: flex;
     width: 300px;
