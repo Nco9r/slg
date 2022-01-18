@@ -6,7 +6,7 @@
       <main>
           <hero-rea/>
         
-          <search-rea/>
+          <search-rea :piscines=piscines :terrassements=terrassements :maconneries=maconneries />
           <Cta/>
 
       </main>
@@ -20,6 +20,13 @@ import SearchRea from '../../components/Realisations/SearchRea.vue'
 import Cta from '../../components/Index/Cta.vue'
 
 export default {
+   async asyncData({ $strapi }) {
+    return {
+      piscines: await $strapi.find('piscines'),
+      maconneries: await $strapi.find('maconneries'),
+      terrassements: await $strapi.find('terrassements'),
+    }
+  },
   components: { HeroRea, Story, SearchRea, Cta}
 
 }

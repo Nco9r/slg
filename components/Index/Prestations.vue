@@ -24,7 +24,7 @@
             </div>
             <div class="btn_card">
               <nuxt-link to="/services/creation-de-piscine">
-              <p>En savoir plus</p>
+                <p>En savoir plus</p>
               </nuxt-link>
             </div>
           </div>
@@ -33,7 +33,6 @@
               <img src="~assets/img/svg/icon_mac.svg" alt="" />
             </div>
             <div class="title_card">
-
               <h4>Maçonnerie generale</h4>
             </div>
             <div class="content_card">
@@ -43,9 +42,9 @@
               </p>
             </div>
             <div class="btn_card">
-               <nuxt-link to="/services/maçonnerie-generale">
-              <p>En savoir plus</p>
-               </nuxt-link>
+              <nuxt-link to="/services/maçonnerie-generale">
+                <p>En savoir plus</p>
+              </nuxt-link>
             </div>
           </div>
           <div class="card">
@@ -62,20 +61,20 @@
               </p>
             </div>
             <div class="btn_card">
-               <nuxt-link to="/services/terrassement">
-              <p>En savoir plus</p>
-               </nuxt-link>
+              <nuxt-link to="/services/terrassement">
+                <p>En savoir plus</p>
+              </nuxt-link>
             </div>
           </div>
         </vue-tiny-slider>
       </no-ssr>
     </div>
-   
+
     <div class="slide_tiny">
-      <button class="slidePrev" id="prev">
+      <button class="slidePrev" id="prev_p">
         <img src="@/assets/img/svg/arrow.svg" alt="" />
       </button>
-      <button class="slideNext" id="next">
+      <button class="slideNext" id="next_p">
         <img src="@/assets/img/svg/arrow.svg" alt="" />
       </button>
     </div>
@@ -96,14 +95,15 @@ export default {
         gutter: 0,
         preventScrollOnTouch: 'auto',
         controls: true,
-        prevButton: '#prev',
-        nextButton: '#next',
+        prevButton: '#prev_p',
+        nextButton: '#next_p',
         responsive: {
-          1014: {
+          1024: {
             items: 3,
+            edgePadding: 40,
             loop: false,
-            prevButton: '#prev',
-            nextButton: '#next',
+            prevButton: '#prev_p',
+            nextButton: '#next_P',
           },
         },
       },
@@ -148,9 +148,9 @@ a {
   background-color: var(--white);
   text-align: center;
   height: 330px;
-
+  box-shadow: rgb(0 0 0 / 10%) 0px 10px 30px;
   padding: 40px 20px;
-
+  border-radius: 0 25px 0 25px;
   display: block;
 }
 .tns-controls {
@@ -171,7 +171,7 @@ a {
 
 .tns-item {
   margin-right: 20px;
-margin-left: 20px;
+  margin-left: 20px;
   display: block;
 }
 
@@ -226,7 +226,6 @@ margin-left: 20px;
   height: 100px;
 }
 
-
 .slide_tiny {
   display: flex;
   flex-flow: row nowrap;
@@ -243,7 +242,6 @@ margin-left: 20px;
   text-align: center;
   width: 325px!important;
 } */
-
 
 .slide_tiny .slidePrev {
   border: none;
@@ -272,23 +270,35 @@ margin-left: 20px;
 }
 
 @media screen and (min-width: 1024px) {
-
-
   .title_prestations h3 {
-    font-size: 34px;
+    font-size: 26px;
     line-height: 46px;
+  }
+
+  .prestations {
+    margin-bottom: 60px;
+  }
+
+  .title_prestations {
+    margin-bottom: -30px;
   }
   .tns-item {
     padding: 40px 20px;
     margin-left: 20px;
     width: 420px !important;
+    
   }
+
+  .tns-carousel {
+    width: 100%;
+  }
+
+ 
 
   .tns-item:nth-child(1) {
     padding: 40px 20px;
-    margin-left: 70px;
+    margin-left: 0px;
     width: 420px !important;
-
   }
 
   .rec_left {
@@ -300,12 +310,111 @@ margin-left: 20px;
   }
 
   .slide_tiny {
-    display: flex;
-    margin-top: 0px;
+    display: none;
+  }
 
-    z-index: 9;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
+  .content_card {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .title_prestations h3 {
+    font-size: 32px;
+    line-height: 46px;
+
+  }
+
+  .title_prestations {
+    margin-bottom: -30px;
+  }
+  .tns-item {
+    padding: 40px 20px;
+    margin-left: 10px;
+    width: 420px !important;
+    
+  }
+
+  .tns-carousel {
+    width: 100%;
+  }
+
+  #tns2 {
+    width: calc(100%)!important;
+  }
+
+ 
+
+  .tns-item:nth-child(1) {
+    padding: 40px 20px;
+    margin-left: 0px;
+    width: 420px !important;
+  }
+
+  .rec_left {
+    display: none;
+  }
+
+  .rec_right {
+    display: none;
+  }
+
+  .slide_tiny {
+    display: none;
+  }
+
+  .content_card {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .title_prestations h3 {
+    font-size: 42px;
+    line-height: 52px;
+
+  }
+
+  .title_prestations {
+    margin-bottom: -30px;
+  }
+  .tns-item {
+    padding: 40px 20px;
+    margin-left: 10px;
+    width: 420px !important;
+    
+  }
+
+  .tns-carousel {
+    width: 100%;
+  }
+
+  #tns2 {
+    width: calc(100%)!important;
+  }
+
+ 
+
+  .tns-item:nth-child(1) {
+    padding: 40px 20px;
+    margin-left: 0px;
+    width: 420px !important;
+  }
+
+  .rec_left {
+    display: none;
+  }
+
+  .rec_right {
+    display: none;
+  }
+
+  .slide_tiny {
+    display: none;
+  }
+
+  .content_card {
+    padding: 0 30px;
   }
 }
 </style>

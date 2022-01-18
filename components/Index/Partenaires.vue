@@ -21,6 +21,226 @@
           <img src="~assets/img/svg/logo_3.svg" alt="">
           <img src="~assets/img/svg/logo_4.svg" alt="">
           <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+            <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+            <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+            <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+            <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+            <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+            <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+            <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+            <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+            <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+            <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+           <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
+            <img src="~assets/img/svg/logo_1.svg" alt="">
+          <img src="~assets/img/svg/logo_2.svg" alt="">
+          <img src="~assets/img/svg/logo_3.svg" alt="">
+          <img src="~assets/img/svg/logo_4.svg" alt="">
+          <img src="~assets/img/svg/logo_5.svg" alt="">
       </div>
   </section>
 </template>
@@ -57,6 +277,29 @@ export default {
 .box img {
     width: 200px;
     margin-right: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+    .box {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    animation: slide 155s infinite linear;
+}
+}
+
+@media screen and (min-width: 1800px) {
+    .box {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    animation: slide 255s infinite linear;
+}
+
+.box img {
+    width: 700px;
+    margin-right: 50px;
+}
 }
 
 </style>

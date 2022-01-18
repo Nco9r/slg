@@ -139,4 +139,29 @@ export default {
     line-height: 80px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .baseline {
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+
+  .baseline_first {
+      margin-left: -1300px;
+  }
+
+  .baseline_second {
+      margin-left: -200px;
+  }
+
+  .baseline_first p {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  .baseline_second p {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
 </style>

@@ -63,11 +63,15 @@
           est situé au 95 Avenue du Maréchal de Lattre de Tassigny, 33610
           Cestas.
         </p>
+        <div class="block_copyright">
+
+
         <p>
           © 2022 - <strong>SLGréalisation</strong> - Tous droits réservés - Siret
           : n° 883 384 067 00012 - NAF : 4399C.
         </p>
         <p>Made w/ Nicolas ROUX</p>
+              </div>
         <div class="sociaux_desktop">
           <a href="" target="_blank"><img src="" alt="" /></a>
           <a href="" target="_blank"><img src="" alt="" /></a>
@@ -119,14 +123,14 @@ a {
   margin-bottom: -20px;
 }
 
+
+
 footer {
   background-color: var(--bleu);
   background-image: url('~assets/img/svg/plamier_2.svg');
   background-size: 75%;
   background-repeat: no-repeat;
   background-position: 150% 120%;
-
-
 }
 
 .container_footer {
@@ -240,14 +244,17 @@ footer {
 
 @media screen and (min-width: 1024px) {
 
-  footer {
-    margin-top: 00px;
-  }
+ footer {
+  background-color: var(--bleu);
+  background-image: url('~assets/img/svg/plamier_2.svg');
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: 100% 120%;
+}
   .container_footer {
     max-width: 900px;
     margin: auto;
     padding: 0;
-    margin-top: 10px;
   }
 
   .wave {
@@ -293,13 +300,22 @@ footer {
 
   .copyright {
     display: flex;
-    width: 600px;
+    width: 100%;
     justify-content: space-between;
     flex-flow: column;
+  }
+
+  .block_copyright {
+    display: flex;
+    justify-content: space-between;
   }
   .sociaux_desktop {
     display: flex;
     align-items: center;
+  }
+
+  .items_footer {
+    display: flex;
   }
 
   .sociaux {
@@ -315,8 +331,16 @@ footer {
   .container_footer {
     max-width: 1200px;
     margin: auto;
-    margin-top: 50px;
   }
+
+
+footer {
+  background-color: var(--bleu);
+  background-image: url('~assets/img/svg/plamier_2.svg');
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
 
   .logo_footer {
     width: 300px;
@@ -334,7 +358,7 @@ footer {
   }
 
   .item_footer {
-    width: 300px;
+    width: 200px;
   }
 
   hr {
@@ -345,6 +369,10 @@ footer {
     display: flex;
     width: 100%;
     justify-content: space-between;
+  }
+
+  .copyright p:nth-child(1) {
+    width: 600px;
   }
   .sociaux_desktop {
     display: flex;

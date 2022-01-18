@@ -4,19 +4,18 @@
       <no-ssr>
         <vue-tiny-slider v-bind="tinySliderOptions" ref="tinySlider">
           <img src="~assets/img/png/home_img.jpg" alt="" />
-          
-          <img src="~assets/img/png/img_2.jpg" alt="" />
 
+          <img src="~assets/img/png/img_2.jpg" alt="" />
         </vue-tiny-slider>
       </no-ssr>
-       <div class="slide_tiny">
-      <button class="slidePrev" id="prev">
-        <img src="@/assets/img/svg/arrow.svg" alt="" />
-      </button>
-      <button class="slideNext" id="next">
-        <img src="@/assets/img/svg/arrow.svg" alt="" />
-      </button>
-    </div>
+      <div class="slide_tiny_hero">
+        <button class="slidePrev_hero" id="prev">
+          <img src="@/assets/img/svg/arrow.svg" alt="" />
+        </button>
+        <button class="slideNext_hero" id="next">
+          <img src="@/assets/img/svg/arrow.svg" alt="" />
+        </button>
+      </div>
     </div>
     <div class="hero_content">
       <div class="title_hero">
@@ -42,17 +41,16 @@
 export default {
   data() {
     return {
-        tinySliderOptions: {
+      tinySliderOptions: {
         mouseDrag: true,
         loop: true,
         items: 1,
         nav: false,
-         container: '.hero_img',
-        autoplay: true,
+        container: '.hero_img',
+
         navPosition: 'bottom',
-        autoplayTimeout: 3500,
-        speed: 500,
-        autoplayButtonOutput: false,
+
+        speed: 800,
         gutter: 0,
         mode: 'carousel',
         preventScrollOnTouch: 'auto',
@@ -61,9 +59,8 @@ export default {
         nextButton: '#next',
       },
     }
-  }
+  },
 }
-
 </script>
 
 <style scoped>
@@ -99,6 +96,14 @@ export default {
   background-image: url('~assets/img/svg/carre.svg');
   background-size: 135%;
   padding: 10px 45px 10px 35px;
+  border-radius: 0 0px 0 25px;
+}
+
+.title_hero {
+  opacity: 0;
+  animation: appear 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2.4s;
 }
 
 .title_hero h1 {
@@ -108,6 +113,17 @@ export default {
   font-weight: 900;
   margin-bottom: 15px;
   color: var(--white);
+}
+
+@keyframes appear {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 .tns-item {
@@ -125,19 +141,11 @@ export default {
   justify-content: center;
 }
 
-/* .tns-item {
-  padding: 40px 20px;
-  margin-left: 25px;
-  margin-right: 15px;
-  text-align: center;
-  width: 325px!important;
-} */
+.slide_tiny_hero {
+  display: block;
+}
 
-
-
-
-
-.slide_tiny .slidePrev {
+.slide_tiny_hero .slidePrev_hero {
   border: none;
   background-color: transparent;
   position: absolute;
@@ -145,21 +153,22 @@ export default {
   left: 10px;
 }
 
-.slide_tiny .slideNext {
- border: none;
+.slide_tiny_hero .slideNext_hero {
+  border: none;
   background-color: transparent;
   position: absolute;
   top: 50%;
   right: 10px;
 }
 
-.slide_tiny .slidePrev img {
+.slide_tiny_hero .slidePrev_hero img {
   transform: rotate(180deg);
-  width: 25px;
+  width: 25px !important;
+  height: 25px;
 }
-.slide_tiny .slideNext img {
-
+.slide_tiny_hero .slideNext_hero img {
   width: 25px;
+  height: 25px;
 }
 
 .btn {
@@ -167,6 +176,10 @@ export default {
   text-align: center;
   font-weight: 700;
   width: 250px;
+  opacity: 0;
+  animation: appear 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2.4s;
   color: var(--bleu);
 }
 
@@ -191,11 +204,36 @@ export default {
 
 @media screen and (min-width: 1024px) {
   .hero_img img {
-    width: 84.2%;
+    width: 100%;
 
     object-fit: cover;
-    height: 90vh;
-    margin-right: -90px;
+    height: 620px;
+  }
+
+  .slide_tiny_hero .slidePrev_hero {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 88%;
+    left: 50px;
+  }
+
+  .slide_tiny_hero .slideNext_hero {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 88%;
+    left: 110px;
+  }
+
+  .slide_tiny_hero .slidePrev_hero img {
+    transform: rotate(180deg);
+    width: 35px !important;
+    height: 35px;
+  }
+  .slide_tiny_hero .slideNext_hero img {
+    width: 35px;
+    height: 35px;
   }
 
   .btn  {
@@ -203,7 +241,7 @@ export default {
   }
 
   .hero_banner {
-    margin-top: 100px;
+    margin-top: 90px;
   }
 
   .hero_content {
@@ -213,7 +251,7 @@ export default {
 
     right: 0;
     padding: 20px 30px 40px 50px;
-    bottom: -50px;
+    bottom: -100px;
   }
 
   .title_hero h1 {
@@ -229,6 +267,99 @@ export default {
     bottom: 130px;
 
     left: 95%;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .hero_img img {
+    width: 100%;
+
+    object-fit: cover;
+    height: 820px;
+  }
+
+  .slide_tiny_hero .slidePrev_hero {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 88%;
+    left: 50px;
+  }
+
+  .slide_tiny_hero .slideNext_hero {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 88%;
+    left: 110px;
+  }
+
+  .slide_tiny_hero .slidePrev_hero img {
+    transform: rotate(180deg);
+    width: 35px !important;
+    height: 35px;
+  }
+  .slide_tiny_hero .slideNext_hero img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .btn  {
+    margin-top: 90px;
+  }
+
+  .hero_banner {
+    margin-top: 90px;
+  }
+
+  .hero_content {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    z-index: 2;
+    right: 0;
+    padding: 20px 30px 40px 50px;
+    bottom: -100px;
+  }
+
+  .title_hero h1 {
+    margin-top: 30px;
+    font-size: 42px;
+    line-height: 62px;
+    width: 400px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: var(--white);
+  }
+  .mouse {
+    top: 88%;
+
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+ .hero_img img {
+    width: 100%;
+
+    object-fit: cover;
+    height: 920px;
+  }
+
+  .hero_content {
+  
+    width: 700px;
+    height: 700px;
+  }
+
+  .title_hero h1 {
+    margin-top: 30px;
+    font-size: 52px;
+    line-height: 72px;
+    width: 400px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: var(--white);
   }
 }
 </style>

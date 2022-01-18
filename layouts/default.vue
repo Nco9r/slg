@@ -73,7 +73,7 @@ h3 {
 }
 
 .btn {
- background: linear-gradient(90deg, rgba(251,204,46,1) 0%, rgba(255,216,0,1) 100%);
+ background: var(--yellow);
   padding: 12px 18px;
   border-radius: 0 25px 0 25px;
   width: 250px;
@@ -81,7 +81,15 @@ h3 {
   text-align: center;
   color: var(--bleu);
   font-weight: bold;
+  cursor: pointer;
+  transition: all .3s;
 }
+
+.btn:hover {
+  background: var(--turquoise);
+  
+}
+
 
 .btn_light {
   background-color: transparent;
@@ -157,8 +165,6 @@ select {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    display: none;
-  }
+ 
 }
 </style>

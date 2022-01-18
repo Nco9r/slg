@@ -128,7 +128,9 @@ export default {
   text-align: center;
   height: 330px;
 width: 100px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 10px 30px;
   padding: 40px 20px;
+border-radius: 0 25px 0 25px;
 
   display: block;
 }

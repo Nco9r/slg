@@ -98,4 +98,42 @@ export default {
     font-size: 12px;
     color: var(--bleu);
 }
+
+@media screen and (min-width: 1024px) {
+  .breadcrum {
+    max-width: 900px;
+    margin: auto;
+     padding: 30px 10px;
+  }
+
+  .breadcrum p {
+    font-size: 14px;
+    color: var(--bleu);
+}
+}
+
+@media screen and (min-width: 1250px) {
+  .breadcrum {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .breadcrum p {
+    font-size: 16px;
+    color: var(--bleu);
+}
+}
+
+@media screen and (min-width: 1800px) {
+  .breadcrum {
+    max-width: 1700px;
+    margin: auto;
+   
+  }
+
+  .breadcrum p {
+    font-size: 16px;
+    color: var(--bleu);
+}
+}
 </style>

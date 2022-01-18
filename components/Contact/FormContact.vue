@@ -255,4 +255,67 @@ input[type='checkbox' i]:checked::after {
     margin-left: 20px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .block_form {
+    max-width: 1100px;
+  
+  }
+
+  .form_contact {
+    padding-bottom: 30px;
+  }
+
+  .top_form {
+    padding-top: 100px;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .top_left {
+    width: 50%;
+  }
+
+  .top_left h2 {
+  color: var(--bleu);
+  font-size: 34px;
+  line-height: 42px;
+  margin-top: 20px;
+  width: 480px;
+}
+
+  .top_right {
+    width: 50%;
+    margin-top: 30px;
+  }
+
+  .form {
+    max-width: 900px;
+    margin: 30px auto;
+  }
+
+  .label_form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .label {
+    width: 47%;
+  }
+
+  .textarea {
+    width: 100%;
+  }
+
+  .content p {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--white);
+    margin-left: 20px;
+  }
+}
 </style>

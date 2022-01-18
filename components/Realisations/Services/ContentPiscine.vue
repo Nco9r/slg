@@ -26,10 +26,11 @@
             également proposé de toute taille et fond incliné ou droit.
           </p>
           <p>
-            De plus, nous vous proposons également <span class="turquoise">l'entretien</span> et le
-            remplacement des <span class="turquoise">accessoires</span> de votre piscine comme les skimmers,
-            les refoulement ou la filtration. Nous pouvons également installer
-            ou remplacer votre lyner.
+            De plus, nous vous proposons également
+            <span class="turquoise">l'entretien</span> et le remplacement des
+            <span class="turquoise">accessoires</span> de votre piscine comme
+            les skimmers, les refoulement ou la filtration. Nous pouvons
+            également installer ou remplacer votre lyner.
           </p>
         </div>
         <div class="btn_block">
@@ -39,9 +40,9 @@
             </nuxt-link>
           </div>
           <div class="btn">
-               <nuxt-link to="/realisations">
-            <p>Devis gratuit</p>
-               </nuxt-link>
+            <nuxt-link to="/realisations">
+              <p>Devis gratuit</p>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -73,9 +74,11 @@ export default {}
 }
 
 .content_img img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 0 25px 0 25px;
+
+  object-fit: cover;
 }
 
 .content_img img:nth-child(1) {
@@ -153,6 +156,7 @@ export default {}
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    position: relative;
   }
 
   .content_left {
@@ -163,10 +167,23 @@ export default {}
     width: 46%;
   }
 
+  .content_img img {
+    height: 450px;
+    width: 100%;
+    border-radius: 0 25px 0 25px;
+    object-fit: cover;
+  }
+
+  .content_img .rec {
+    display: none;
+  }
+
   .btn_block {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
     flex-flow: row-reverse;
   }
 
@@ -177,6 +194,65 @@ export default {}
 
   .btn_light {
     width: 200px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .content_piscine {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+  .title_left h3 {
+    margin-top: -30px;
+    font-size: 32px;
+  }
+
+  .title_left p {
+    text-transform: uppercase;
+    font-size: 82px;
+    font-weight: 900;
+    color: var(--baseline);
+    margin-left: 20px;
+  }
+
+  .content p {
+    line-height: 32px;
+    font-size: 18px;
+    width: 500px;
+    color: var(--bleu);
+    margin-bottom: 20px;
+  }
+
+  .content_img img {
+    height: 550px;
+    width: 100%;
+    border-radius: 0 25px 0 25px;
+    object-fit: cover;
+  }
+
+  .btn_block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    flex-flow: row-reverse;
+  }
+
+  .btn {
+    width: 200px;
+    margin: 0;
+  }
+
+  .btn_light {
+    width: 200px;
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .content_piscine {
+    max-width: 1700px;
+    margin: 0px auto;
   }
 }
 </style>

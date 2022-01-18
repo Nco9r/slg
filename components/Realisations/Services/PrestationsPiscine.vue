@@ -42,7 +42,9 @@
               </p>
             </div>
             <div class="btn_card">
+               <nuxt-link to="/services/terrassement">
               <p>En savoir plus</p>
+               </nuxt-link>
             </div>
           </div>
         </vue-tiny-slider>
@@ -126,8 +128,9 @@ export default {
   text-align: center;
   height: 330px;
 width: 100px;
+   box-shadow: rgb(0 0 0 / 10%) 0px 10px 30px;
   padding: 40px 20px;
-
+border-radius: 0 25px 0 25px;
   display: block;
 }
 .tns-controls {

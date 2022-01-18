@@ -145,7 +145,12 @@ export default {
         prevButton: '#prev',
         nextButton: '#next',
         responsive: {
-         
+           1024: {
+            items: 2, 
+          },
+           1180: {
+            items: 3, 
+          },
           1440: {
             items: 4, 
           }
@@ -265,11 +270,29 @@ tns-nav-active {
   font-weight: bold;
   margin-right: 5px;
   color: var(--bleu);
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .center {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .title_client h3 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .title_client h3 {
+    font-size: 34px;
+  }
+
+  .title_client {
+    margin-bottom: 50px;
+  }
 }
 </style>

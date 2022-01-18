@@ -1,4 +1,5 @@
 <template>
+<div class="box_bck">
   <section class="search">
     <div class="title_search">
       <h2>Catégories</h2>
@@ -27,66 +28,71 @@
         <p>Terrassement</p>
       </div>
     </div>
-    <transition name="open" appear>    
-    <div class="box_projets" v-if="piscine">
-      <div class="projet">
-        <img src="~assets/img/png/img_2.jpg" alt="" />
-        <div class="bck"></div>
-        <div class="cta_projet">
-          <p>Voir le projet</p>
-          <p>Piscine en block polystyrène</p>
+    <transition name="open" appear>
+      <div class="box_projets" v-if="piscine">
+        <div class="projet" v-for="p in piscines" :key="p.id">
+          <nuxt-link :to="`/realisations/piscines/${p.id}`">
+            <img :src="getStrapiMedia(p.image.url)" alt="" />
+            <div class="bck"></div>
+            <div class="cta_projet">
+              <div class="icon_projet">
+                <img src="~assets/img/svg/pelle.svg" alt="" />
+                <p>{{ p.titre }}</p>
+              </div>
+              <div class="icon_projet">
+                <p>Voir le projet</p>
+              </div>
+            </div>
+          </nuxt-link>
         </div>
       </div>
-      <div class="projet">
-        <img src="~assets/img/png/home_img.jpg" alt="" />
-        <div class="bck"></div>
-        <div class="cta_projet">
-          <p>Voir le projet</p>
-          <p>Piscine traditionnelle</p>
-        </div>
-      </div>
-      <div class="projet">
-        <img src="~assets/img/png/img_3.jpg" alt="" />
-        <div class="bck"></div>
-        <div class="cta_projet">
-          <p>Voir le projet</p>
-          <p>Piscine en block polystyrène</p>
-        </div>
-      </div>
-      
-    </div>
     </transition>
-    <transition name="open" appear>   
-    <div class="box_projets" v-if="maconnerie">
-      
-      <div class="projet">
-        <img src="~assets/img/png/img_4.jpg" alt="" />
-        <div class="bck"></div>
-        <div class="cta_projet">
-          <p>Voir le projet</p>
-          <p>Terrain de pétanque</p>
+    <transition name="open" appear>
+      <div class="box_projets" v-if="maconnerie">
+        <div class="projet" v-for="p in maconneries" :key="p.id">
+          <nuxt-link :to="`/realisations/piscines/${p.id}`">
+            <img :src="getStrapiMedia(p.image.url)" alt="" />
+            <div class="bck"></div>
+            <div class="cta_projet">
+              <div class="icon_projet">
+                <img src="~assets/img/svg/pelle.svg" alt="" />
+                <p>{{ p.titre }}</p>
+              </div>
+              <div class="icon_projet">
+                <p>Voir le projet</p>
+              </div>
+            </div>
+          </nuxt-link>
         </div>
       </div>
-    </div>
     </transition>
-    <transition name="open" appear>   
-     <div class="box_projets" v-if="ter">
-      
-      <div class="projet">
-        <img src="~assets/img/png/img_4.jpg" alt="" />
-        <div class="bck"></div>
-        <div class="cta_projet">
-          <p>Voir le projet</p>
-          <p>Terrain de pétanque</p>
+    <transition name="open" appear>
+      <div class="box_projets" v-if="ter">
+        <div class="projet" v-for="p in terrassements" :key="p.id">
+          <nuxt-link :to="`/realisations/piscines/${p.id}`">
+            <img :src="getStrapiMedia(p.image.url)" alt="" />
+            <div class="bck"></div>
+            <div class="cta_projet">
+              <div class="icon_projet">
+                <img src="~assets/img/svg/pelle.svg" alt="" />
+                <p>{{ p.titre }}</p>
+              </div>
+              <div class="icon_projet">
+                <p>Voir le projet</p>
+              </div>
+            </div>
+          </nuxt-link>
         </div>
       </div>
-    </div>
     </transition>
   </section>
+</div>
 </template>
 
 <script>
+import { getStrapiMedia } from '~/utils/medias'
 export default {
+  props: ['piscines', 'maconneries', 'terrassements'],
   data() {
     return {
       piscine: true,
@@ -94,10 +100,22 @@ export default {
       ter: false,
     }
   },
+  methods: {
+    getStrapiMedia,
+  },
 }
 </script>
 
 <style scoped>
+
+.box_bck {
+  background: var(--background-gradient-rotate);
+}
+
+.search {
+  margin-bottom: -50px;
+  padding-bottom: 50px;
+}
 .title_search {
   padding: 10px 26px 5px 26px;
   margin-top: 20px;
@@ -142,7 +160,11 @@ export default {
 }
 
 .active {
-   background: linear-gradient(90deg, rgba(251,204,46,1) 0%, rgba(255,216,0,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 204, 46, 1) 0%,
+    rgba(255, 216, 0, 1) 100%
+  );
   color: var(--bleu);
   font-weight: bold;
 }
@@ -159,6 +181,19 @@ export default {
   z-index: 2;
 }
 
+.icon_projet {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icon_projet img {
+  width: 25px;
+  border-radius: 0px;
+  margin-right: 10px;
+}
+
 .projet {
   margin-bottom: 20px;
 
@@ -167,7 +202,7 @@ export default {
 
 .bck {
   position: absolute;
-  top: 120px;
+  top: 0px;
   left: 0;
   right: 0;
   bottom: 9px;
@@ -175,7 +210,7 @@ export default {
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(6, 73, 86, 0.7) 40%
+    rgba(6, 73, 86, 0.7) 80%
   );
   z-index: 3;
 }
@@ -195,25 +230,26 @@ export default {
 
 .cta_projet p:nth-child(2) {
   color: var(--white);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 @keyframes open {
   from {
-    opacity: 0; 
+    opacity: 0;
   }
   to {
-    opacity: 1; 
+    opacity: 1;
   }
 }
 
 @keyframes close {
   from {
-    opacity: 1; 
+    opacity: 1;
   }
   to {
-    opacity: 0; 
+    opacity: 0;
   }
 }
 
@@ -223,5 +259,26 @@ export default {
 
 .open-leave-active {
   animation: close 1s;
+}
+
+@media screen and (min-width: 1024px) {
+  .search {
+    max-width: 900px;
+    margin-top: 50px auto;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .search {
+    max-width: 1200px;
+    margin-top: 50px auto;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .search {
+    max-width: 1700px;
+    margin-top: 50px auto;
+  }
 }
 </style>

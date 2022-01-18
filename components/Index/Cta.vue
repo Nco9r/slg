@@ -24,7 +24,7 @@ export default {
 <style scoped>
 
 .cta {
-    background-image: url('~assets/img/png/cta_img.jpg');
+    background-image: url('~assets/img/png/img_home.jpg');
     margin-top: 50px;
     height: 320px;
     background-size: cover;
@@ -42,6 +42,7 @@ export default {
     margin-bottom: 20px;
     color: var(--white);
     line-height: 28px;
+    font-weight: bold;
 }
 
 .btn {
@@ -52,6 +53,8 @@ export default {
     .cta {
         background-size: 100%;
         background-position: 50%;
+        height: 420px;
+     
     }
 
     .title_cta h3 {
@@ -63,7 +66,7 @@ export default {
 }
 
 .btn {
-    margin: 30px auto 0 auto;
+    margin: 30px auto 60px auto;
 }
 
 }

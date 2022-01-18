@@ -1,21 +1,25 @@
 <template>
-  <section class="rea">
-    <div class="title_rea">
-      <h3>Nos dernières réalisations</h3>
-      <img src="~assets/img/svg/wave.svg" alt="" />
-    </div>
-    <div class="box_cards">
-      <img src="~assets/img/png/img_1.jpg" alt="" />
-      <img src="~assets/img/png/img_2.jpg" alt="" />
-      <img src="~assets/img/png/img_3.jpg" alt="" />
-      <img src="~assets/img/png/img_4.jpg" alt="" />
-    </div>
-    <div class="btn">
+  <div class="box_rea">
+    <section class="rea">
+      <div class="title_rea">
+        <h3>Nos dernières réalisations</h3>
+        <img src="~assets/img/svg/wave.svg" alt="" />
+      </div>
+      <div class="box_cards">
+        <div class="box_point">
+          <img src="~assets/img/svg/points.svg" alt="" />
+        </div>
+        <img src="~assets/img/png/img_1.jpg" alt="" />
+        <img src="~assets/img/png/img_2.jpg" alt="" />
+        <img src="~assets/img/png/img_3.jpg" alt="" />
+        <img src="~assets/img/png/img_4.jpg" alt="" />
+        <div class="box_rec"></div>
+      </div>
       <nuxt-link to="/realisations">
-        <p>Nos réalisations</p>
+        <div class="btn">Nos réalisations</div>
       </nuxt-link>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -27,10 +31,9 @@ export default {
 </script>
 
 <style scoped>
-.rea {
+.box_rea {
   background: var(--background-gradient);
   padding: 30px 15px 0px 15px;
-
 }
 .title_rea h3 {
   margin-bottom: 5px;
@@ -41,7 +44,6 @@ export default {
 .title_rea img {
   margin-bottom: 5px;
   padding: 0 16px;
-
 }
 
 .box_cards {
@@ -52,8 +54,6 @@ export default {
   z-index: 2;
   margin-bottom: 50px;
 }
-
-
 
 .card_rea {
   text-align: center;
@@ -133,8 +133,127 @@ export default {
 }
 
 .btn {
-    text-align: center;
-    margin: auto;
-    margin-bottom: 50px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
 }
+
+.box_point {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .rea {
+    max-width: 900px;
+    margin: 30px auto;
+  }
+
+  .title_rea {
+    margin-bottom: 60px;
+  }
+
+  .title_rea h3 {
+    font-size: 26px;
+    width: 600px;
+  }
+
+  .box_cards {
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .box_point {
+    position: absolute;
+    display: flex;
+    top: -30px;
+    left: -30px;
+  }
+
+  .box_rec {
+    position: absolute;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background: var(--turquoise);
+    bottom: 0px;
+    right: -30px;
+  }
+
+  .box_point img {
+    width: 350px !important;
+  }
+
+  .box_cards img {
+    width: 48%;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .box_cards img:hover {
+    transform: scale(1.03);
+    opacity: 0.8;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .rea {
+    max-width: 1200px;
+    margin: 70px auto;
+  }
+
+    .title_rea h3 {
+    font-size: 34px;
+    width: 600px;
+  }
+
+    .box_cards img {
+    width: 48%;
+    margin-bottom: 30px;
+    height: 300px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .rea {
+    max-width: 1700px;
+    margin: 70px auto;
+  }
+
+    .title_rea h3 {
+    font-size: 42px;
+    width: 600px;
+  }
+
+    .box_cards img {
+    width: 48%;
+    margin-bottom: 60px;
+    height: 400px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+    .box_point {
+    position: absolute;
+    display: flex;
+    top: -50px;
+    left: -50px;
+  }
+
+  .box_rec {
+    position: absolute;
+    display: flex;
+    width: 600px;
+    height: 300px;
+    background: var(--turquoise);
+    bottom: 0px;
+    right: -80px;
+  }
+}
+
 </style>

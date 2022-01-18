@@ -72,13 +72,17 @@
               <nuxt-link to="/">
                 <p>Accueil</p>
               </nuxt-link>
-              <nuxt-link to="/contact">
+              <nuxt-link to="/services/creation-de-piscine">
                 <p>Nos services</p>
               </nuxt-link>
+               <nuxt-link to="/realisations">
               <p>Nos réalisations</p>
+               </nuxt-link>
+               <nuxt-link to="/contact">
               <div class="btn">
                 <p>Contact</p>
               </div>
+               </nuxt-link>
             </div>
           </div>
         </div>
@@ -345,7 +349,8 @@ a {
 
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 100;
+    box-shadow: rgb(48 41 41 / 4%) 0px 2px 2px 1px;
     background-color: var(--white);
   }
 
@@ -370,6 +375,7 @@ a {
     display: flex;
     align-items: center;
     margin: 0 15px;
+    text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
     color: var(--bleu);
@@ -393,6 +399,89 @@ a {
     font-weight: bold;
     margin: auto;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header_mobile {
+    display: none;
+  }
+
+  .header_desktop {
+    display: flex;
+  }
+
+  .desktop {
+    position: fixed;
+    top: 0;
+
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: var(--white);
+  }
+
+  .block_header {
+    max-width: 1150px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .block_left img {
+    width: 130px;
+  }
+
+  .block_right .item_desktop {
+    display: flex;
+    align-items: center;
+  }
+
+  .block_right .item_desktop p {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--bleu);
+    transition: all .2s;
+  }
+
+
+  .block_right .item_desktop p:hover {
+   
+    color: var(--turquoise);
+  }
+
+  .btn {
+    width: 150px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bleu);
+    font-weight: bold;
+  }
+
+  .btn {
+    width: 150px;
+    padding: 8px 12px;
+    text-align: center;
+    color: var(--bleu);
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+ .block_header {
+    max-width: 1750px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 </style>

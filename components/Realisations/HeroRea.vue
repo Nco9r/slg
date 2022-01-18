@@ -36,15 +36,13 @@ export default {}
 
 /* PAGE */
 
-section {
-  overflow: hidden;
-}
-
 .hero_banner {
-  overflow-x: hidden;
-
   position: relative;
   margin-top: 70px;
+}
+
+.hero_img {
+  position: relative;
 }
 
 .hero_img img {
@@ -55,12 +53,21 @@ section {
 
 .hero_content {
   background-color: var(--bleu);
-  margin-top: -10px;
+  margin-top: -20px;
   width: 100%;
+  z-index: 11;
   height: 510px;
   background-image: url('~assets/img/svg/carre.svg');
   background-size: 135%;
   padding: 10px 45px 10px 35px;
+  border-radius: 0 0px 0 25px;
+}
+
+.title_hero {
+  opacity: 0;
+  animation: appear 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2.4s;
 }
 
 .title_hero h1 {
@@ -72,11 +79,71 @@ section {
   color: var(--white);
 }
 
+@keyframes appear {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.tns-item {
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  display: block;
+}
+
+.tns-gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.slide_tiny_hero {
+  display: block;
+}
+
+.slide_tiny_hero .slidePrev_hero {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+
+.slide_tiny_hero .slideNext_hero {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+.slide_tiny_hero .slidePrev_hero img {
+  transform: rotate(180deg);
+  width: 25px !important;
+  height: 25px;
+}
+.slide_tiny_hero .slideNext_hero img {
+  width: 25px;
+  height: 25px;
+}
+
 .btn {
   margin-top: 30px;
   text-align: center;
   font-weight: 700;
   width: 250px;
+  opacity: 0;
+  animation: appear 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2.4s;
   color: var(--bleu);
 }
 
@@ -101,29 +168,54 @@ section {
 
 @media screen and (min-width: 1024px) {
   .hero_img img {
-    width: 84.2%;
+    width: 100%;
 
     object-fit: cover;
-    height: 90vh;
-    margin-right: -90px;
+    height: 620px;
   }
 
-  .btn {
+  .slide_tiny_hero .slidePrev_hero {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 88%;
+    left: 50px;
+  }
+
+  .slide_tiny_hero .slideNext_hero {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 88%;
+    left: 110px;
+  }
+
+  .slide_tiny_hero .slidePrev_hero img {
+    transform: rotate(180deg);
+    width: 35px !important;
+    height: 35px;
+  }
+  .slide_tiny_hero .slideNext_hero img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .btn  {
     margin: 0;
   }
 
   .hero_banner {
-    margin-top: 100px;
+    margin-top: 90px;
   }
 
   .hero_content {
     position: absolute;
     width: 500px;
     height: 500px;
-  
+
     right: 0;
     padding: 20px 30px 40px 50px;
-    bottom: -50px;
+    bottom: -100px;
   }
 
   .title_hero h1 {
@@ -139,6 +231,99 @@ section {
     bottom: 130px;
 
     left: 95%;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .hero_img img {
+    width: 100%;
+
+    object-fit: cover;
+    height: 820px;
+  }
+
+  .slide_tiny_hero .slidePrev_hero {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 88%;
+    left: 50px;
+  }
+
+  .slide_tiny_hero .slideNext_hero {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 88%;
+    left: 110px;
+  }
+
+  .slide_tiny_hero .slidePrev_hero img {
+    transform: rotate(180deg);
+    width: 35px !important;
+    height: 35px;
+  }
+  .slide_tiny_hero .slideNext_hero img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .btn  {
+    margin-top: 90px;
+  }
+
+  .hero_banner {
+    margin-top: 90px;
+  }
+
+  .hero_content {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    z-index: 2;
+    right: 0;
+    padding: 20px 30px 40px 50px;
+    bottom: -100px;
+  }
+
+  .title_hero h1 {
+    margin-top: 30px;
+    font-size: 42px;
+    line-height: 62px;
+    width: 400px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: var(--white);
+  }
+  .mouse {
+    top: 88%;
+
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+ .hero_img img {
+    width: 100%;
+
+    object-fit: cover;
+    height: 920px;
+  }
+
+  .hero_content {
+  
+    width: 700px;
+    height: 700px;
+  }
+
+  .title_hero h1 {
+    margin-top: 30px;
+    font-size: 52px;
+    line-height: 72px;
+    width: 400px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: var(--white);
   }
 }
 </style>

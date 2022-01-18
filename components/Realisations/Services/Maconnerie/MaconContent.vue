@@ -67,6 +67,7 @@ export default {}
 .content_img img {
     height: 300px;
     width: 100%;
+    border-radius: 0 25px 0 25px;
     object-fit: cover;
 }
 
@@ -169,6 +170,65 @@ export default {}
 
   .btn_light {
     width: 200px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .content_piscine {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+  .title_left h3 {
+    margin-top: -30px;
+    font-size: 32px;
+  }
+
+  .title_left p {
+    text-transform: uppercase;
+    font-size: 82px;
+    font-weight: 900;
+    color: var(--baseline);
+    margin-left: 20px;
+  }
+
+  .content p {
+    line-height: 32px;
+    font-size: 18px;
+    width: 500px;
+    color: var(--bleu);
+    margin-bottom: 20px;
+  }
+
+  .content_img img {
+    height: 550px;
+    width: 100%;
+    border-radius: 0 25px 0 25px;
+    object-fit: cover;
+  }
+
+  .btn_block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    flex-flow: row-reverse;
+  }
+
+  .btn {
+    width: 200px;
+    margin: 0;
+  }
+
+  .btn_light {
+    width: 200px;
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .content_piscine {
+    max-width: 1700px;
+    margin: 0px auto;
   }
 }
 </style>

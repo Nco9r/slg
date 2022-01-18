@@ -55,24 +55,25 @@
             informations
           </p>
         </div>
-        <div
-          class="btn"
-          data-aos="fade-up"
-          data-aos-offset="10"
-          data-aos-delay="130"
-          data-aos-duration="900"
-        >
         <nuxt-link to="/contact">
-          <p>En savoir plus</p>
+          <div
+            class="btn"
+            data-aos="fade-up"
+            data-aos-offset="10"
+            data-aos-delay="130"
+            data-aos-duration="900"
+          >
+            En savoir plus
+          </div>
         </nuxt-link>
-        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-export default {}
+import aosMixin from '~/mixins/aos'
+export default { mixins: [aosMixin] }
 </script>
 
 <style scoped>
@@ -128,7 +129,16 @@ export default {}
     display: flex;
     justify-content: space-between;
     max-width: 900px;
-    margin: 100px auto;
+    margin: 100px auto 30px auto;
+  }
+
+  .block_right .title_block h3 {
+    font-size: 26px;
+    margin-bottom: 45px;
+  }
+
+  .block_right .news_title {
+    font-size: 80px;
   }
 
   .block_right {
@@ -139,6 +149,91 @@ export default {}
   .block_left {
     background: transparent;
     width: 43%;
+    margin-top: 0px;
+  }
+
+  .block_left img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .block_news {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 100px auto 30px auto;
+  }
+
+  .block_right .title_block h3 {
+    font-size: 34px;
+    margin-bottom: 45px;
+  }
+
+  .content_block p {
+  line-height: 32px;
+  color: var(--bleu);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+  .block_right .news_title {
+    font-size: 80px;
+  }
+
+  .block_right {
+    background: transparent;
+    width: 55%;
+  }
+
+  .block_left {
+    background: transparent;
+    width: 43%;
+    margin-top: 0px;
+  }
+
+  .block_left img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .block_news {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1700px;
+    align-items: center;
+    margin: 100px auto 30px auto;
+  }
+
+  .block_right .title_block h3 {
+    font-size: 42px;
+    margin-bottom: 45px;
+    line-height: 56px;
+  }
+
+  .content_block p {
+  line-height: 36px;
+  color: var(--bleu);
+  font-size: 20px;
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+
+
+  .block_right .news_title {
+    font-size: 140px;
+  }
+
+  .block_right {
+    background: transparent;
+    width: 45%;
+  }
+
+  .block_left {
+    background: transparent;
+    width: 40%;
     margin-top: 0px;
   }
 

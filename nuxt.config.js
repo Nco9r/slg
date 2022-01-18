@@ -1,4 +1,6 @@
-module.exports = {
+
+
+export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'slgrealisation',
@@ -28,13 +30,18 @@ module.exports = {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: ['@nuxtjs/dotenv'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/strapi',
+
   ],
+  strapi: {
+    url: process.env.STRAPI_URL || 'http://localhost:1337',
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
