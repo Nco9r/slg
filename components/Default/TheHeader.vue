@@ -346,10 +346,9 @@ a {
   .desktop {
     position: fixed;
     top: 0;
-
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 12;
     box-shadow: rgb(48 41 41 / 4%) 0px 2px 2px 1px;
     background-color: var(--white);
   }

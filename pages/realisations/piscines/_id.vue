@@ -197,7 +197,7 @@ export default {
 
 .content_block p {
   color: var(--bleu);
-  font-size: 1§px;
+  font-size: 16px;
 }
 
 .tns-item {

@@ -119,7 +119,7 @@ transform: translateY(50px);
 @media screen and (min-width: 1250px) {
   .story_block {
     display: flex;
-    padding-top: 100px;
+    padding-top: 200px;
     max-width: 1200px;
     margin: auto;
     justify-content: space-between;

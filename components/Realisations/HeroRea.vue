@@ -55,7 +55,6 @@ export default {}
   background-color: var(--bleu);
   margin-top: -20px;
   width: 100%;
-  z-index: 11;
   height: 510px;
   background-image: url('~assets/img/svg/carre.svg');
   background-size: 135%;

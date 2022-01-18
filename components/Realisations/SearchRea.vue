@@ -179,6 +179,7 @@ export default {
   width: 100%;
   border-radius: 0 25px 0 25px;
   z-index: 2;
+  position: relative;
 }
 
 .icon_projet {
@@ -264,21 +265,58 @@ export default {
 @media screen and (min-width: 1024px) {
   .search {
     max-width: 900px;
-    margin-top: 50px auto;
+    margin: 100px auto -50px auto;
+  }
+  .box_projets {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .projet {
+    width: 48%;
+    margin-bottom: 40px;
+    transition: all .3s;
+  }
+
+  .projet:hover {
+    transform: scale(1.03);
+  }
+
+  .projet a img:nth-child(1) {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .bck {
+   right: 0;
+  }
+
+  .icon_projet img{
+    width: 30Px!important;
+    height:30px!important;
+    object-fit: cover;
+  }
+
+  .cta_projet {
+    display: flex;
+    flex-flow: column
   }
 }
 
 @media screen and (min-width: 1250px) {
   .search {
     max-width: 1200px;
-    margin-top: 50px auto;
+    margin: 50px auto -50px auto;
   }
 }
 
 @media screen and (min-width: 1800px) {
   .search {
     max-width: 1700px;
-    margin-top: 50px auto;
+   margin: 50px auto -50px auto;
   }
 }
 </style>
