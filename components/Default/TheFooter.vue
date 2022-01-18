@@ -31,14 +31,14 @@
           <div class="item_footer">
             <h4>Sitemap</h4>
             <nuxt-link to="/"><p>Accueil</p></nuxt-link>
-            <nuxt-link to="/"><p>Services</p></nuxt-link>
-            <nuxt-link to="/"><p>Réalisations</p></nuxt-link>
+            <nuxt-link to="/services/creation-de-piscine"><p>Services</p></nuxt-link>
+            <nuxt-link to="/realisations"><p>Réalisations</p></nuxt-link>
           </div>
           <div class="item_footer">
             <h4>Légales</h4>
-            <nuxt-link to="/"><p>Mentions légales</p></nuxt-link>
-            <nuxt-link to="/"><p>Politique de confidentialité</p></nuxt-link>
-            <nuxt-link to="/"><p>Cookies</p></nuxt-link>
+            <nuxt-link to="/mentions-legales"><p>Mentions légales</p></nuxt-link>
+            <nuxt-link to="/mentions-legales"><p>Politique de confidentialité</p></nuxt-link>
+            <nuxt-link to="/mentions-legales"><p>Cookies</p></nuxt-link>
           </div>
           <div class="item_footer desktop">
             <h4>Nous suivre</h4>
@@ -70,7 +70,9 @@
           © 2022 - <strong>SLGréalisation</strong> - Tous droits réservés - Siret
           : n° 883 384 067 00012 - NAF : 4399C.
         </p>
+        <a href="https://rouxnicolas.fr" target="_blank">
         <p>Made w/ Nicolas ROUX</p>
+        </a>
               </div>
         <div class="sociaux_desktop">
           <a href="" target="_blank"><img src="" alt="" /></a>
@@ -330,6 +332,66 @@ footer {
 @media screen and (min-width: 1200px) {
   .container_footer {
     max-width: 1200px;
+    margin: auto;
+  }
+
+
+footer {
+  background-color: var(--bleu);
+  background-image: url('~assets/img/svg/plamier_2.svg');
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
+
+  .logo_footer {
+    width: 300px;
+  }
+
+  .infos_footer {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .logo_footer p {
+    width: 220px;
+  }
+
+  .item_footer {
+    width: 200px;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .copyright {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .copyright p:nth-child(1) {
+    width: 600px;
+  }
+  .sociaux_desktop {
+    display: flex;
+    align-items: center;
+  }
+
+  .sociaux {
+    display: none;
+  }
+
+  .sociaux_desktop img {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .container_footer {
+    max-width: 1750px;
     margin: auto;
   }
 
