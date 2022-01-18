@@ -151,7 +151,7 @@ export default {
            1180: {
             items: 3, 
           },
-          1440: {
+          1500: {
             items: 4, 
           }
         }
